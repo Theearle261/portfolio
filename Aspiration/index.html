@@ -7,5 +7,5 @@ $isMob = is_numeric(strpos($ua, "mobile"));
 $isTab = is_numeric(strpos($ua, "tablet"));
 $isDesk = !$isMob && !$isTab;
 echo $isDesk
-  ? "<script>window.location = 'PC/index.php'</script>"
-  : "<script>window.location = 'Mobile/index.php'</script>";
+  ? "<script>window.location = 'PC/index.html'</script>"
+  : "<script>window.location = 'Mobile/index.html'</script>";
