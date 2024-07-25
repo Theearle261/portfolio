@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart</title>
+  <link rel="icon"  href="logodark.png">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=" plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+
+  <!-- /.navbar -->
+
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Cart</h1>
+          </div>
+       
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-4">
+
+
+
+
+                   <?php 
+
+              include('config.php');
+
+    include('session.php');
+    
+
+    $fld_Id=$_GET['id'];
+
+
+                    $sql = "SELECT * FROM tbl_user where fld_Id='$fld_Id' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+
+                      while($row = mysqli_fetch_assoc($result)) {
+
+                        
+
+
+
+?>  
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Shipping Details</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+         
+                <div class="card-body">
+                 
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" value="<?php echo $row['fld_Firstname']." ". $row['fld_Lastname'];  ?>" readonly>
+          <div class="input-group-append">
+           
+          </div>
+        </div>
+
+         <div class="input-group mb-3">
+          <input type="text" class="form-control" value="<?php echo $row['fld_Phone']  ?>" readonly>
+          <div class="input-group-append">
+           
+          </div>
+        </div>
+
+          <div class="input-group mb-3">
+          <input type="text" class="form-control" value="<?php echo $row['fld_Address']  ?>" readonly>
+          <div class="input-group-append">
+           
+          </div>
+        </div>
+
+     
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" value="<?php echo $row['fld_Username']  ?>" readonly>
+          <div class="input-group-append">
+          
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#varyModal" data-whatever="@mdo">
+          Change Details</button> 
+
+
+
+           <div class=" modal fade" id="varyModal" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="defaultModalLabel">Shipping Details</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+
+                            </div> 
+
+
+
+
+
+                           <form method="POST" action="Update_Shipping.php" enctype="multipart/form-data" >  
+                            <div class="modal-body">
+
+
+
+
+                       <div class="form-group row">
+
+              
+                  
+                        <label for="disabledInput" class="col-sm-4 col-form-label">Phone Number</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" name="fld_Phone" value="<?php echo $row['fld_Phone']  ?>" required="required">
+                        </div>
+                      </div>
+
+
+                      <input type="hidden"  name="fld_Id" value="<?php echo $row['fld_Id']  ?>">
+                      
+
+                      <div class="form-group row">
+
+                  
+                        <label for="disabledInput" class="col-sm-4 col-form-label">Address</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" name="fld_Address" value="<?php echo $row['fld_Address']  ?>" required="true" >
+                        </div>
+                      </div>
+
+
+        
+
+
+
+
+
+
+
+ </div>
+
+                  
+                            <div class="modal-footer">
+                              <input type="submit" class="btn mb-2 btn-primary"  name="add" value="Update">
+                            </div> </form>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+   <?php 
+      }
+
+      ?>
+                </div>
+                <!-- /.card-body -->
+
+            
+            </div>
+            <!-- /.card -->
+
+            <!-- general form elements -->
+
+            <form action="Check_Out.php" method="post">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Payment Method</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-4">
+
+                <h6>E-Wallet</h6><hr>
+
+
+
+
+                 <INPUT TYPE="RADIO" NAME="fld_Payment_Method" VALUE="Pay" required="required" disabled><img src="bank/pay.png" style="width:100px"></INPUT><br/>(currently unavailable)<br/><br/>
+
+                 <INPUT TYPE="RADIO" NAME="fld_Payment_Method" VALUE="Phone" required="required" disabled><img src="bank/phone.png" style="width:100px"></INPUT><br/>(currently unavailable)<br/><br/>
+               </div>
+                 <div class="col-md-4">
+
+                <h6>E-Banking</h6><hr>
+
+                       <INPUT TYPE="RADIO" NAME="fld_Payment_Method" VALUE="IDFC" required="required" disabled><img src="bank/IDFC.png" style="width:100px"></INPUT><br/>(currently unavailable)<br/><br/>
+
+                       <INPUT TYPE="RADIO" NAME="fld_Payment_Method" VALUE="SBI" required="required" disabled ><img src="bank/sbi.png" style="width:100px"></INPUT><br/><br/>(currently unavailable)<br/><br/>
+                        <INPUT TYPE="RADIO" NAME="fld_Payment_Method" VALUE="Indus" required="required" disabled><img src="bank/indus.png" style="width:100px"></INPUT><br/>(currently unavailable)<br/><br/>
+                     </div>
+
+                           <div class="col-md-4">
+
+                <h6>Others</h6><hr>
+
+                       <INPUT TYPE="RADIO" NAME="fld_Payment_Method" VALUE="COD" required="required"><img src="bank/cod.png" style="width:100px"></INPUT><br/><br/>
+
+                   
+                     </div>
+
+
+                
+               </div>    
+
+             </div>
+              <!-- /.card-body -->
+            </div>
+  
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-8">
+            <!-- Form Element sizes -->
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Orders</h3>
+              </div>
+              <div class="card-body">
+          
+        <div class="input-group mb-3">
+         <label class="form-label">Orders</label>
+        
+        </div>
+
+            <?php
+                             $sql = "SELECT * FROM tbl_user inner join tbl_orders on tbl_user.fld_Id=tbl_orders.fld_Id inner join tbl_products on tbl_orders.fld_Product_Id=tbl_products.fld_product_Id where tbl_user.fld_Id='$fld_Id' and tbl_orders.fld_status='New Order' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+ if (mysqli_num_rows($result) > 0) { 
+
+  ?>
+
+         <div class="input-group mb-3">
+         <table class="table table-bordered table-striped" >
+          <tr>
+    <th>Item</th>
+           <th>Price</th>
+           <th>Quantity</th>
+           <th>Subtotal</th>
+            <th>Action</th>
+         </tr>
+
+
+
+
+
+  <?php
+                      while($row = mysqli_fetch_assoc($result)) {
+
+$fld_q=$row['fld_Quantity'];
+
+$fld_p=$row['fld_Price'];
+$total=$fld_q*$fld_p;
+
+?>  
+           <tr>
+              <td><img src=images/<?php echo $row['fld_pic'];?> style="width: 60px;"><?php echo $row['fld_product_name']  ?></td>
+          <td><?php echo $row['fld_Price']  ?></td>
+            <td><?php echo $row['fld_Quantity']  ?></td>
+              <td ><?php echo '₹'. $total; ?></td>
+                 <td id='TTL' hidden ><?php echo  $total; ?></td>
+                <td>
+                  <a href="Delete_Order.php?id=<?php echo $row['fld_order_Id'] ?>&id2=<?php echo $row['fld_Id'] ?>"class="btn btn-danger">Delete</a>
+                </td>
+         </tr>
+
+   <input type="hidden" name="fld_Id" value="<?php echo $row['fld_Id'] ?>">
+
+
+ 
+  
+
+         <?php 
+       }
+
+
+       ?>  <tr>
+           <td colspan="3" align="center"><b>Grand Total:</b></td>
+           <td colspan="2" id='GTTL'>0</td>
+         </tr>   
+
+ <script type="text/javascript">
+window.onload = function(){
+
+
+       var TotalValue = 0;
+       $("tr #TTL").each(function(index,value){
+         currentRow = parseFloat($(this).text());
+         TotalValue += currentRow
+       });
+
+       document.getElementById('GTTL').innerHTML ='₹'+ TotalValue;
+       // document.getElementById('GTTL').value= TotalValue;
+
+}
+
+
+  
+</script>
+
+
+         </table>
+        </div>
+
+
+        <div align="right"><input type="submit" value="Check Out" class="btn btn-primary"></a></div>
+      </form>
+
+
+<?php 
+
+  }else{
+    ?>
+
+  <p>Tray is Empty</p> <a href="index.php"class="btn btn-success">Order Now</a>
+      
+      <?php
+     }
+
+
+     ?>
+
+       
+       
+
+              </div>
+              <!-- /.card-body -->
+            </div>
+     
+          
+            <!-- /.card -->
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+ 
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src=" plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src=" plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src=" plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- AdminLTE App -->
+<script src=" dist/js/adminlte.min.js"></script>
+
+<!-- Page specific script -->
+<script>
+$(function () {
+  bsCustomFileInput.init();
+});
+</script>
+</body>
+</html>

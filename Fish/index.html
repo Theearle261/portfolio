@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FM Fish Company</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+
+  <link rel="icon"  href="logodark.png">
+
+
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+    
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	
+	<!--web font-->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!--//web font-->
+
+
+<?php 
+
+
+		include('config.php');
+
+		include('session.php');
+
+
+		?>
+</head>
+
+<body>
+
+<!-- header -->
+<header style="background-color: black;">
+	<div style="padding-left:10%; padding-right: 10%; " id="home">
+		<nav class="" >
+			<div id="logo">
+				<h1> <a href="index.php" class="editContent" data-selector=".editContent"><img src="logo.png" style="height:30px; width: 30px;"> FM Fish Company</a></h1>
+			</div>
+			<div class="mx-auto">
+				<label for="drop" class="toggle mt-lg-0 mt-3">Menu</label>
+				<input type="checkbox" id="drop" />
+				<ul class="menu mt-lg-4">
+					<li class=" mr-lg-2 mr-1 active"><a href="#">Home</a></li>
+					<li class=" mr-lg-2 mr-1"><a href="#about">About</a></li>
+					<li><a href="#gallery">Our Fishes</a></li>
+						<li><a href="#facts">Agriculture Facts</a></li>
+			<li class=" mr-lg-2 mr-1"><a href="#services">Services</a></li>
+					<li class="dropdown-menu-padding">
+					<!-- First Tier Drop Down -->
+		
+				
+					<li><a href="#contact">Contact</a></li>
+<!-- 
+					<?php 
+					     if(!isset($_SESSION['login_user'])){
+
+					     	?> -->
+					     	<li><a href="#">Login</a></li>
+
+					   <!--   	<?php
+					     }else{
+
+
+?>
+				
+				
+				
+							     	<li><a href="logout.php">Logout</a></li>
+
+<?php 
+
+}
+?> -->
+
+
+				
+			</div>
+		</nav>
+	</div>
+</header>
+
+
+
+<style type="text/css">
+	
+	.circle-sm{
+
+		background-color: white;
+		border-radius: 50%;
+		color: red;
+		width: 15px;
+		height: 15px;
+		padding: 10px;
+
+
+	}
+
+
+</style>
+<!-- //header -->
+
+<div class="csslider infinity" id="slider1">
+  <input type="radio" name="slides" checked="checked" id="slides_1"/>
+  <input type="radio" name="slides" id="slides_2"/>
+  <input type="radio" name="slides" id="slides_3"/>
+  <input type="radio" name="slides" id="slides_4"/>
+  <ul>
+    <li>
+		<div id="bg">
+			<div class="container">
+				<div class="banner-text">
+				  <h6> Fresh from the Ocean to Your Plate</h6>
+				  <h3> We Serve Fresh Fish From Our Fish Farm</h3>
+				</div>
+			</div>
+		</div>
+    </li>
+    <li>
+        <div id="bg1">
+			<div class="container">
+				<div class="banner-text" >
+				  <h6 > Where Seafood Dreams Come True</h6>
+				  <h3> Enjoy Our Locally Sourced Fresh Fish</h3>
+				</div>
+			</div>
+        </div>
+    </li>
+    <li>
+		<div id="bg2">
+			<div class="container">
+				<div class="banner-text" style="color: black;">
+				  <h6> Your One-Stop Seafood Destination</h6>
+				  <h3> Experience the Freshness of Our Ocean-to-Table Fish</h3>
+				</div>
+			</div>
+        </div>
+    </li>
+    <li>
+		<div id="bg3">
+			<div class="container">
+				<div class="banner-text">
+				  <h6> Seafood Delights, Unleash Your Appetite!</h6>
+				  <h3> We're Committed to Serving You Fresh Fish, Every Time</h3>
+				</div>
+			</div>
+		</div>
+    </li>
+	
+  </ul>
+  <div class="arrows">
+    <label for="slides_1"></label>
+    <label for="slides_2"></label>
+    <label for="slides_3"></label>
+    <label for="slides_4"></label>
+  </div>
+  <div class="navigation"> 
+    <div>
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+      <label for="slides_4"></label>
+    </div>
+  </div>
+</div>
+
+<!-- //banner -->
+
+<!-- about -->
+<section class="about py-5" id="about">
+	<div class="container py-md-3">
+		<h3 class="heading text-center mb-md-5 mb-4">About Us</h3>
+		<div class="row about-grids agile-info">
+			<div class="col-lg-6 mb-lg-0 w3-agile-grid mb-5">
+				<h4 class="mb-4">Welcome to FM Fish Company</h3>
+				<p class="mb-5">FM Fish Company is a renowned and trusted name in the world of live fish supply. Our company has earned a stellar reputation for providing enthusiasts, aquarium hobbyists, and marine enthusiasts with an extensive and diverse selection of live fish species. We are dedicated to ensuring that our customers receive healthy, vibrant, and thriving live fish for their aquatic ecosystems.
+</p>
+				
+			</div>
+			<div class="col-lg-6 col-md-8 w3-agile-grid pr-md-0">
+				<img src="images/about.jpg" class="img-fluid" />
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //about -->
+
+
+<section class="work" >
+	<div class="work-layer py-5">
+	<div class="container py-md-1" style="height:200px;">
+
+			
+	
+		
+		</div>
+	</div>
+</section>
+<section class="gallery py-5" id="gallery">
+	<div class="container py-3">
+		<h3 class="heading text-center mb-lg-5 mb-4">Our Fishes</h3>
+		<div class="row gallery_grid-more project-grids w3ls">
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/1.jpg" alt=" " class="img-prod" />
+			
+					<div align="center">
+					<p class="prod" >Milk Fish</p>
+					<p class="price" >₹100.00 </p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm<?php echo $row['fld_product_Id'] ?>">
+                   <i class="fa-solid fa-basket-shopping fa-shake"></i>Purchase
+                </button>
+					<br/><br/>
+				</div>
+			</div>
+			</div>
+
+
+						<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+					<img src="images/2.jpg" alt=" " class="img-prod" />
+			
+					<div align="center">
+					<p class="prod" >Peter's fish</p>
+					<p class="price" >₹200.00 </p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm<?php echo $row['fld_product_Id'] ?>">
+                   <i class="fa-solid fa-basket-shopping fa-shake"></i>Purchase
+                </button>
+					<br/><br/>
+				</div>
+			</div>
+			</div>
+
+
+						<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+					<img src="images/3.png" alt=" " class="img-prod" />
+			
+					<div align="center">
+					<p class="prod" >Yellow Fin</p>
+					<p class="price" >₹150.00 </p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm<?php echo $row['fld_product_Id'] ?>">
+                   <i class="fa-solid fa-basket-shopping fa-shake"></i>Purchase
+                </button>
+					<br/><br/>
+				</div>
+			</div>
+			</div>
+
+
+
+
+						<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/4.jpg" alt=" " class="img-prod" />
+			
+					<div align="center">
+					<p class="prod" >Round Scad</p>
+					<p class="price" >₹250.00 </p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm<?php echo $row['fld_product_Id'] ?>">
+                   <i class="fa-solid fa-basket-shopping fa-shake"></i>Purchase
+                </button>
+					<br/><br/>
+				</div>
+			</div>
+			</div>
+
+
+
+
+						<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/5.png" alt=" " class="img-prod" />
+			
+					<div align="center">
+					<p class="prod" >Frigate Tuna</p>
+					<p class="price" >₹350.00 </p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm<?php echo $row['fld_product_Id'] ?>">
+                   <i class="fa-solid fa-basket-shopping fa-shake"></i>Purchase
+                </button>
+					<br/><br/>
+				</div>
+			</div>
+			</div>
+
+
+
+
+						<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+					<img src="images/6.jpg" alt=" " class="img-prod" />
+			
+					<div align="center">
+					<p class="prod" >Flounder Fish</p>
+					<p class="price" >₹200.00 </p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm<?php echo $row['fld_product_Id'] ?>">
+                   <i class="fa-solid fa-basket-shopping fa-shake"></i>Purchase
+                </button>
+					<br/><br/>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			
+		</div>
+	</section>
+
+
+
+<style type="text/css">
+	
+	.prod{
+
+  font-weight: bold;
+  color: green;
+ font-size: 20px;
+
+}
+
+.price{
+
+  font-weight: bold;
+  color: yellowgreen;
+ font-size: 20px;
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="service-bottom bg py-5" id="facts" style="background-color:black;">
+	<div class="container">
+		<!-- Counter -->
+		<div class="py-lg-5 py-3">
+			<h3 class="heading text-center text-white mb-lg-5 mb-4">Agricultural Facts</h3>
+			<div class="row ">
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid">
+					<div class="counterinfo agile-info">
+						<p class="counter">146</p> 
+						<h3>Business Growth</h3>
+					</div>
+				</div>
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid">
+					<div class="counterinfo agile-info">
+						<p class="counter">1500</p> 
+						<h3>Fruits Supplied</h3>
+					</div>
+				</div>
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid mt-md-0 mt-4">
+					<div class="counterinfo agile-info">
+						<p class="counter">15+</p>
+						<h3>Years Experience</h3>
+					</div>
+				</div>
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid mt-md-0 mt-4">
+					<div class="counterinfo agile-info">
+						<p class="counter">150+</p>
+						<h3>Agriculture Farmers</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Counter -->
+	</div>
+</section>
+
+
+
+<section class="services py-5" id="services">
+	<div class="container py-md-5">
+		<h3 class="heading text-center mb-lg-5 mb-4">Our Services</h3>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 w3-agile-grid">
+
+
+				<h4><span class="fa fa-lemon circle"></span> Supplier</h4>
+				<p>A supplier is a person or business that provides a product or service to another entity. The role of a supplier in a business is to provide high-quality products from a manufacturer at a good price to a distributor or retailer for resale.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-sm-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-store circle"></span> Retailer</h4>
+				<p>A retailer is a business that finds, buys and gathers products or services from multiple suppliers and sells them to consumers. Retailers provide value by offering consumers a wide selection of products and services in one place.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-lg-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-usd circle" aria-hidden="true"></span> Wholesaler</h4>
+				<p> Wholesaler is a person or company who sells products in bulk to various outlets or retailers for onward sale, either directly or through a middleman. </p>
+			</div>
+			
+			</div>
+<br/><br/>
+
+			<div class="row">
+			<div class="col-lg-4 col-sm-6 w3-agile-grid">
+				<h4><span class="fa fa-share circle"></span> Exporter</h4>
+				<p>The exporter is a person, company or entity sending or transporting the goods out of the country.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-sm-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-download circle"></span> Importer</h4>
+				<p>Importer is a person, company or entity buying or transporting goods from another country into the importer's home country.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-lg-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-mobile-screen-button circle" aria-hidden="true"></span> Agricultural E-commerce</h4>
+				<p>Agriculture e-commerce services can reduce post-harvest waste by minimizing the number of intermediaries farmers need to liaise with, improve access to more efficient transportation, and quicker access to quality storage facilities.</p>
+
+
+			</div>
+			
+			</div>
+			
+		</div>
+	</div>
+	</div>
+</section>
+
+
+
+<style type="text/css">
+	.circle{
+
+
+
+	background-color: #dc3545;
+	color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+ 
+  padding: 20px;
+	}
+
+
+</style>
+
+
+<?php
+
+$sql = "SELECT * FROM tbl_products where fld_Status='Active' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+
+                      while($row = mysqli_fetch_assoc($result)) {
+
+
+?>
+
+
+
+
+<div class="modal fade" id="modal-sm<?php echo $row['fld_product_Id'] ?>">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"><?php echo $row['fld_product_name'] ?></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            	<img src="images/<?php echo $row['fld_pic'] ?>" alt="Popup Image" class="img-fluid" />
+
+	<br/><br/>
+
+
+<div align="center">
+
+		<p class="price" >₹<?php echo $row['fld_price'] ?>.00 </p>
+<button class="btn-sm btn-dark" onclick="sub<?php echo $row['fld_product_Id'] ?>()">-</button> <input type="text"  value="1" readonly style="width:50px;text-align: center;" id='quantity<?php echo $row['fld_product_Id'] ?>' > <button onclick="add<?php echo $row['fld_product_Id']?>()" class="btn-sm btn-success">+</button>
+	<form action="Order.php" method="POST">
+<input type="text"  name="fld_Quantity" value="1" hidden readonly style="width:50px;text-align: center;" id='quantity2<?php echo $row['fld_product_Id'] ?>' >
+<input type="hidden" name="fld_product_Id" value="<?php echo $row['fld_product_Id'] ?>">
+
+<br/>
+<br/>
+
+<div class="row">
+	<div class="col-md-6">
+<label class="form-label">Total Price</label>
+
+
+	</div>
+
+	<div class="col-md-6">
+			<input type="hidden"  name="fld_Price" value="<?php echo $row['fld_price'] ?>">
+<input type="text"  class="form-control w-10"  id="Total<?php echo $row['fld_product_Id'] ?>" value="₹<?php echo $row['fld_price'] ?>.00 " readonly >
+
+	</div>
+</div>
+
+
+<br/>
+<!-- <div class="row">
+	<div class="col-md-6">
+
+<label class="form-label">Payment Method</label>
+</div>
+	<div class="col-md-6">
+<select class="form-control">
+
+	<option value="PNB">PNB</option>
+		<option value="BPI">BPI</option>
+			<option value="Metrobank">Metrobank</option>
+
+
+</select>
+</div>
+<br/><br/>
+
+
+</div> -->
+
+<?php 
+     if(!isset($_SESSION['login_user'])){
+
+
+?>
+
+<a href="#" class="btn btn-primary">Login</a>
+
+<?php 
+
+
+}else{
+
+	?>
+	<input type="hidden" name="fld_Id" value="<?php echo $fld_Id?>">
+	<input type="submit" class="btn-block btn-lg btn-success" value="Add to Tray" name="Order"  id="Order<?php echo $row['fld_product_Id'] ?>"  >
+
+
+<?php 
+}
+
+?>
+</form>
+</div>
+
+            </div>
+           
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+	
+ 
+
+
+
+<?php 
+}
+
+
+
+
+
+?>
+
+
+                                <?php
+
+$sql = "SELECT * FROM tbl_products  where fld_Status='Active' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+
+                      while($row = mysqli_fetch_assoc($result)) {
+
+
+?> 
+
+                          	<script type="text/javascript">    
+
+
+
+                          	function check<?php echo $row['fld_product_Id'] ?>(){
+
+
+                          	
+                          		document.getElementById('Order<?php echo $row['fld_product_Id'] ?>').hidden=false;
+                            	
+                          				document.getElementById('combo<?php echo $row['fld_product_Id'] ?>').hidden=true;
+                          				document.getElementById('combo2<?php echo $row['fld_product_Id'] ?>').hidden=false;
+                          					document.getElementById('box2<?php echo $row['fld_product_Id'] ?>').checked=true;
+
+                          	} 
+
+                          	 	function check2<?php echo $row['fld_product_Id'] ?>(){
+
+
+                          
+                          		document.getElementById('Order<?php echo $row['fld_product_Id'] ?>').hidden=true;
+                          		
+                          				document.getElementById('combo<?php echo $row['fld_product_Id'] ?>').hidden=false;
+                          				document.getElementById('combo2<?php echo $row['fld_product_Id'] ?>').hidden=true;
+                          				document.getElementById('box1<?php echo $row['fld_product_Id'] ?>').checked=false;
+
+                          	} 
+
+
+                          	 function add<?php echo $row['fld_product_Id']?>(){
+
+
+
+                                  var quant<?php echo $row['fld_product_Id'] ?>=document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value;
+																document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value= ++quant<?php echo $row['fld_product_Id']?>;
+																document.getElementById('quantity2<?php echo $row['fld_product_Id'] ?>').value= quant<?php echo $row['fld_product_Id']?>;
+                                
+                    
+                                
+
+																	document.getElementById('Total<?php echo $row['fld_product_Id'] ?>').value="₹ "+ quant<?php echo $row['fld_product_Id']?>*<?php echo $row['fld_price'] ?>+".00" ;
+              
+
+
+
+                                  
+                                }
+
+                                function sub<?php echo $row['fld_product_Id'] ?>(){
+
+
+
+                                  var quant<?php echo $row['fld_product_Id'] ?>=document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value;
+                                  document.getElementById('quantity2<?php echo $row['fld_product_Id'] ?>').value= quant<?php echo $row['fld_product_Id']?>;
+
+                                  if (quant<?php echo $row['fld_product_Id'] ?><=1){
+
+                                    document.getElementById('minus<?php echo $row['fld_product_Id'] ?>').disabled=true;
+
+                                    	document.getElementById('Total<?php echo $row['fld_product_Id'] ?>').value="₹"+quant<?php echo $row['fld_product_Id']?>*<?php echo $row['fld_price'] ?>+".00" ;
+
+
+                                  }else{
+                                  document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value= --quant<?php echo $row['fld_product_Id'] ?>;
+                                  document.getElementById('quantity2<?php echo $row['fld_product_Id'] ?>').value= quant<?php echo $row['fld_product_Id']?>;
+
+                                  	document.getElementById('Total<?php echo $row['fld_product_Id'] ?>').value="₹ "+ quant<?php echo $row['fld_product_Id']?>*<?php echo $row['fld_price'] ?> +".00";
+                                }
+                                }
+
+
+                             
+
+                               </script>
+<?php
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="work" id="Refund">
+	<div class="work-layer py-5">
+	<div class="container py-md-1">
+
+			
+	<style type="text/css">
+		
+
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+	</style>
+			<div class="py-lg-5 py-3">
+			<h3 class="heading text-center text-white mb-lg-5 mb-4">Reach Us Now!</h3>	
+
+			<div align="center" class="text-white">
+	<h3>Call 9821838127</h3>
+	<h3>MUMBAI-CHEMBUR SION TROMBAY ROAD</h3>
+
+
+
+
+
+
+</div>
+		</div>
+			
+	</div>
+	</div>
+</section>
+
+
+<!-- subscribe
+<section class="quotes py-5 text-center">
+	<div class="container py-md-3">
+		<div class="quotes-info agile-info-quotes">
+			<h3 class="heading text-center mb-3">Subscribe with us</h3>
+			<p class="mb-5">Cras blandit nibh ut pretium elementum. Duis bibendum convallis nun ca dictum. Quisquen ac ipsum porta, ultrices metus sit amet,
+			curs in nisl. Duis aliquet varius sem sit amet.</p>
+			<form action="#" method="post" class="">
+				<input type="email" name="Email" placeholder="Enter your email..." required="">
+				<input type="submit" value="Subscribe">
+				<div class="clearfix"> </div>
+				<span>By signing up to our website, you agree to the <a href="#">terms and conditions.</a></span>
+			</form>
+		</div>
+	</div>
+</section> 
+ -->
+
+<!-- footer -->	
+<footer class="py-5" id="contact">
+	<div class="container pt-md-3">
+		<div class="row ">
+		<div class="col-lg-4 col-md-6">
+            <h3 class="mb-4">Address Info</h3>
+
+				<p>MUMBAI-CHEMBUR SION TROMBAY ROAD</p>
+
+				<br/>
+
+    				<h3 class="mb-4">Phone Number</h3>
+				<p class="mt-1">9821838127</p>
+
+				<br/>
+					
+		</div>
+
+
+		<div >
+                        <h3>Opening time </h3>
+                        <ul class="opening">
+                           <li>Monday <span>1pm – 10pm</span></li>
+                           <li>Tuesday <span>1pm – 10pm</span></li>
+                           <li>Wednesday <span>1pm – Midnight</span></li>
+                           <li>Thursday  <span>1pm – 10pm</span></li>
+                           <li>Friday   <span>1pm – Midnight</span></li>
+                           <li>Suturday   <span>1pm – 10pm</span></li>
+                           <li>Suturday   <span>1pm – 10pm</span></li>
+                        </ul>
+                     </div>
+		<div class="col-lg-5 mt-lg-0 mt-5">
+			<h3 class="mb-4 ml-md-5"> Contact Us</h3>
+			<form action="#" method="POST" class="register-wthree">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-2 d-sm-flex align-items-end justify-content-end px-sm-0">
+							<label class="mb-0">
+								<span class="fa fa-user text-white"></span>
+							</label>
+						</div>
+						<div class="col-sm-5 pr-sm-1">
+							<input class="form-control" type="text" placeholder="First Name" name="fld_Firstname" required="">
+						</div>
+						<div class="col-sm-5 pl-sm-1 pl-auto mt-sm-0 mt-2">
+							<input class="form-control" type="text" placeholder="Last Name"  name="fld_Lastname" required="">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-2 d-sm-flex align-items-end justify-content-end px-sm-0">
+							<label class="mb-0">
+								<span class="fa fa-envelope-open text-white"></span>
+							</label>
+						</div>
+						<div class="col-sm-10">
+							<input class="form-control" type="email" name="fld_Email" placeholder="example@mail.com" name="email" required="">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-2 d-sm-flex align-items-end justify-content-end px-sm-0">
+							<label class="mb-0">
+								<span class="fa fa-edit text-white"></span>
+							</label>
+						</div>
+						<div class="col-sm-10">
+							<textarea placeholder="Your message here" name="fld_Message" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="offset-2"></div>
+					<div class="col-sm-10">
+						<button type="submit" onclick="this.form.submit()" name="submit" class="btn btn-block w-100">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+	<?php 
+
+
+
+if(isset($_POST['submit'])){
+
+
+	$fld_Lastname=addslashes($_POST['fld_Lastname']);
+	$fld_Firstname=addslashes($_POST['fld_Firstname']);
+	$fld_Email=addslashes($_POST['fld_Email']);
+	$fld_Message=addslashes($_POST['fld_Message']);
+
+
+
+
+
+
+
+$sqlq = "INSERT INTO tbl_messages (fld_Lastname, fld_Firstname, fld_Email, fld_Message) 
+    VALUES ('$fld_Lastname', '$fld_Firstname', '$fld_Email', '$fld_Message') ;";
+  
+
+
+
+          
+if ($conn->query($sqlq) === TRUE) {
+
+
+
+ 
+ ?>
+
+ <script type="text/javascript">
+window.onload = function(){
+     
+
+
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    window.setTimeout(function () {
+        location.href = "#";
+    }, 4000);
+
+            Swal.fire(
+ 'For portfolio use only; the site has not been fully uploaded yet.',
+    'Developed by Earl',
+  'warning'
+)
+});
+
+} </script>
+
+     <?php
+
+
+
+
+}else{
+
+
+
+      echo "<td>Error updating record: " . mysqli_error($conn);
+}
+
+
+}
+		
+
+	?>
+
+
+
+<br/><br/>
+
+<?php 
+
+ if(!isset($_SESSION['login_user'])){
+
+
+}else{
+
+
+$fld_Id= $_SESSION['login_user'];
+
+
+$sql = "SELECT * FROM tbl_user inner join tbl_orders on tbl_user.fld_Id=tbl_orders.fld_Id where tbl_user.fld_Id='$fld_Id' and tbl_orders.fld_status='New Order' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+
+
+
+
+ 	?>
+
+
+<a class="jump" href="cart.php?id=<?php echo $fld_Id ?>">
+
+    <img class="fa-shake" src="cart.jpg" style=" border-radius: 50%;  width: 75px;
+			height: 75px;
+			position: fixed;
+			right: 20px;
+			top: 85%;
+			transform: translateY(-50%);
+
+			z-index: 99999;">
+
+			<?php if($rowcount<='0'){
+
+			}else{
+				?>
+			
+			<span class="float-right badge badge-danger" style=" 
+	
+			position: fixed;
+			right: 25px;
+			top: 85%;
+			transform: translateY(-50%);
+
+			z-index: 99999;"><?php echo $rowcount ?></span>
+			<?php 
+		}
+
+		?>
+</a>
+
+<a class="jump" href="Orders.php?id=<?php echo $fld_Id ?>">
+
+    <img class="fa-shake" src="upcoming.jpg" style=" border-radius: 50%;  width: 75px;
+			height: 75px;
+			position: fixed;
+			right: 100px;
+			top: 85%;
+			transform: translateY(-50%);
+
+			z-index: 99999;">
+
+			<?php if($rowcount<='0'){
+
+			}else{
+				?>
+			
+			<span class="float-right badge badge-danger" style=" 
+	
+			position: fixed;
+			right: 25px;
+			top: 85%;
+			transform: translateY(-50%);
+
+			z-index: 99999;"><?php echo $rowcount ?></span>
+			<?php 
+		}
+
+		?>
+</a>
+
+
+
+<?php 
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row">
+	<div class="col-lg-4 col-md-6">
+	<div id="logo">
+				<h1> <a href="#home" class="move-top scroll"  data-selector=".editContent"><img src="logo.png" style="height:50px; width: 50px;"> FM Fish Company</a></h1>
+			</div>
+
+	</div>
+	<div class="col-lg-4 col-md-6">
+
+
+
+	</div>
+
+	
+
+</div>
+	</div>
+	<div class="copyright pt-sm-5 pt-4 text-center">
+		<a href="#home" class="move-top scroll"><span class="fa fa-angle-up" aria-hidden="true"></span></a>
+		<p>Copyright &copy; 2023.FM Fish Company All rights reserved.<a target="_blank" ></p>
+	</div>
+</footer>
+<!-- footer -->
+
+<!-- popup for btn -->
+
+<!-- //popup for btn -->
+<!-- jQuery -->
+<script src="fonts\fontawesome-free\js\all.min.js"></script>
+<script src="fonts\fontawesome-free\js\conflict-detection.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 -->
+<script src="plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="plugins/toastr/toastr.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+</body>
+</html>
