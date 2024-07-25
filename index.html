@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Porfolio - Earl Gerald Lapuz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Jun 06 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">EGL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#portfolio">Portfolio</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/hero-img.png" alt="" data-aos="fade-in" style="padding-left: -20%;">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Earl Gerald</h2>
+        <p><span class="typed" data-typed-items="PHP Developer, Graphic Artist, Web Developer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              </div>
+
+              <br/><br/>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Earl Gerald Lapuz</span></p>
+                <p><strong>Profile: </strong> <span>Software Developer</span></p>
+                <p><strong>Email: </strong> <span>lapuzearlgerald86@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>+639 166 377 259</span></p>
+              </div>
+
+            </div>
+
+  
+
+          </div>
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+               
+
+
+
+A driven IT professional with proficiency in Web Development is seeking opportunities to contribute to a company's success through innovative solutions tailored to meet business needs. With a dedication to collaborative teamwork and a passion for continuous learning, I am eager to join a dynamic environment where I can apply my skills, grow professionally, and make meaningful contributions to the IT field.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Earl Gerald Lapuz</h4>
+              <p><em>Innovative and deadline-driven Web Developer/Graphic Designer with 3+ years of experience designing and developing user-centered websites.</em></p>
+              <ul>
+                <li>3116 Villa Amparo Subdivision <br/>Bayan Luma 4 Imus City, Cavite</li>
+                <li>lapuzearlgerald86@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master in Information Technology</h4>
+              <h5>2022 - Present (Capstone)</h5>
+              <p><em>Pamantasan ng Lungsod ng Muntinlupa</em></p>
+                 <p>University Rd, Poblacion, Muntinlupa, Metro Manila</p>
+              
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor Science in Information Technology</h4>
+              <h5>2015 - 2019</h5>
+              <p><em>Saint Louis College</em></p>
+              <p>Carlatan City of San Fernando, La Union</p>
+            </div><!-- Edn Resume Item -->
+
+             <div class="resume-item">
+              <h4>Northern Naguilian National High School</h4>
+              <h5>2011 - 2015</h5>
+              <p>Gusing Norte Naguilian, La Union</p>
+            </div><!-- Edn Resume Item -->
+
+               <div class="resume-item">
+              <h4>Gusing Elementary School</h4>
+              <h5>2005 - 2011</h5>
+              <p>Gusing Sur Naguilian, La Union</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Oriental Group of Companies</h4>
+              <h5>IT Staff</h5>
+              <p>Pearl Plaza 88 Building Tambo, Paranaque</p>
+                <p><em>2023 - Present</em></p>
+              <ul>
+                <li>Responsible in developing websites. (Lottery result website, e-commerce website)</li>
+                <li>Applied API to web systems.</li>
+                <li>Took charrge of Post production system. (Bank Support)</li>
+                <li>Developed backstage of employee management system.</li>
+                <li>Created graphic materials for scratch card game, logos, banners and recruitment banners.</li>
+                <li>Android Development using flutter.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Eds Manufacturing Incorporated</h4>
+              <h5>Technical Specialist</h5>
+              <h6>Production Engineering 2 Department- Research Development and Evaluation Section</h6>
+              <p>Anabu 2-A Imus City Cavite</p>
+                <p><em>2022 - 2023</em></p>
+              <ul>
+                <li>Software Development and Maintenance</li>
+                <li>Investigation and Improvement </li>
+                <li>Orientation of the usage of systems</li>
+                <li>Documentation (Defect Countermeasures, Improvements)</li>
+              </ul>
+
+              <h5>Secretary & Software Developer</h5>
+              <h6>Production Engineering 2 Department- Maintenance Section</h6>
+              <p>Anabu 2-A Imus City Cavite</p>
+                <p><em>2021 - 2022</em></p>
+              <ul>
+                <li> Manpower Management (Overtime, Salary Inquiries, Orientation)</li>
+                <li>Data Analysis </li>
+                <li>Documentations (Job Requests, Accomplishment Reports)</li>
+                <li> Development of Integrated Trouble Reporting System for the
+                      Production Leaders (Database Administration/ Back end
+                      Development/ Front end Development)</li>
+                <li>Machine Inventory (Fixed Asset Tagging)</li>
+              </ul>
+
+
+              <h5>Technical Staff</h5>
+              <h6>Production Engineering 2 Department- Maintenance Section</h6>
+              <p>Anabu 2-A Imus City Cavite</p>
+                <p><em>2020 - 2021</em></p>
+              <ul>
+                <li>Breakdown Maintenance & Preventive Maintenance</li>
+                <li>Basic machine troubleshooting</li>
+                <li>Production tools and equipment fabrication</li>
+               
+              </ul>
+
+
+
+
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+ <!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      
+
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-website">Websites</li>
+            <li data-filter=".filter-android">Android App</li>
+            <li data-filter=".filter-software">Software</li>
+            <li data-filter=".filter-graphics">Graphics</li>
+            <li data-filter=".filter-quiz">Quiz/Fun Games</li>
+             <li data-filter=".filter-AR">AR Filter</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website" >
+              <img src="assets/img/portfolio/aspiration.jpg" class="img-fluid" alt=""  style="height:230px; border-color: black; border-style: 1px;">
+              <div class="portfolio-info">
+                <h4>Aspiration Gaming</h4>
+                <p>"Aspiration Gaming" stands as a premier online rummy platform offering free play, delivering thrills directly to your device</p>
+                <a href="assets/img/portfolio/aspiration.JPG" title="Aspiration Gaming" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="Aspiration" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/diva.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>The Diva Project</h4>
+                <p> Each click of the shutter is an invitation to explore emotions, to relish in the beauty of life's most precious occasions.</p>
+                <a href="assets/img/portfolio/diva.jpg" title="The Diva Project" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="DP" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics">
+              <img src="assets/img/portfolio/job.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>Promotional Posters</h4>
+                <p>Job Posting Posters</p>
+                <a href="assets/img/portfolio/job.jpg" title="Job Posting" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-graphics">
+              <img src="assets/img/portfolio/logo1.png" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>Logo Designs</h4>
+                <p>Compilation of my Logo Designs.</p>
+                <a href="assets/img/portfolio/logo.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/fish.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>FM Fish Company</h4>
+                <p>Our company has earned a stellar reputation for providing enthusiasts, aquarium hobbyists, and marine enthusiasts with an extensive and diverse selection of live fish species.</p>
+                <a href="assets/img/portfolio/fish.jpg" title="FM Fish Company" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="Fish" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-software">
+              <img src="assets/img/portfolio/itrt.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>IT Request Tracker System</h4>
+                <p>Production Trouble Ticketing System</p>
+                <a href="assets/img/portfolio/itrt.jpg" title="IT Request Tracker System" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="ITRT" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+           <!--  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AR">
+              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>TiktokAR Filter</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> --><!-- End Portfolio Item -->
+
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/kanor.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>KanorGames</h4>
+                <p>We excel in providing innovative technology solutions aimed at enhancing business success in the digital landscape</p>
+                <a href="assets/img/portfolio/kanor.jpg" title="Kanorgames Code and Games" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="Kanorgames" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+             <!--      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-software">
+              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>FARMS</h4>
+                <p>Final Assembly Reporting and Maintenance System (FARMS)</p>
+                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> --><!-- End Portfolio Item -->
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/medi.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>MediPoint</h4>
+                <p>We stand ready, at all times, to offer assistance and support to you and your family whenever the need arises. We are here to lend a hand and provide the care and attention you deserve.</p>
+                <a href="assets/img/portfolio/medi.jpg" title="Medipoint" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="MediPoint" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/PG.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>PG Slots</h4>
+                <p>We leverage cutting-edge technology to deliver unparalleled service quality, shaping our approach to align seamlessly with the diverse needs of our valued customers. </p>
+                <a href="assets/img/portfolio/PG.jpg" title="Medipoint" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="PG" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+   
+          <!--   <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-AR">
+              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid"style="height:230px">
+              <div class="portfolio-info">
+                <h4>Facebook/IG AR Filter</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> --><!-- End Portfolio Item -->
+
+
+
+
+         
+
+
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/rso.jpg" class="img-fluid" alt=""  style="height:230px">
+              <div class="portfolio-info">
+                <h4>Royal Star Overseas</h4>
+                <p>Royal Star Overseas is one of the leading Supplier/Retailer/Wholeseller/ Exporter/Importer & E-Commerce of various kind of Agricultural products and groceries based in Mumbai Maharashtra since 2016. </p>
+                <a href="assets/img/portfolio/rso.jpg" title="Royal Star Overseas" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="RSO" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-quiz">
+              <img src="assets/img/portfolio/drag.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>DRPH</h4>
+                <p>Drag Race Philippines Quiz Games</p>
+                <a href="assets/img/portfolio/drag.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a onclick="openWindow()" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <script>
+function openWindow() {
+    var width = 400;
+    var height = 800;
+    var left = (screen.width - width) / 2;
+    var top = (screen.height - height) / 2;
+    window.open("DRPH", "newWindow", "width=" + width + ",height=" + height + ",top=" + top + ",left=" + left);
+}
+</script>
+
+
+
+                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/skill.jpg" class="img-fluid"   style="height:230px">
+              <div class="portfolio-info">
+                <h4>Skillset</h4>
+                <p>Discover the ideal freelance service without delay. Skillset
+is a dynamic and innovative freelance company that specializes in providing top-notch services across a diverse range of industries.</p>
+                <a href="assets/img/portfolio/skill.jpg" title="Skillset" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="Skillset" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/tdp.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>The Diva Project</h4>
+                <p>Creating a remarkable video and photo within everyone's reach.
+Amaze your audience with My Pro, the fastest and easiest way to create professional-quality videos.</p>
+                <a href="assets/img/portfolio/tdp.jpg" title="The Diva Project" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="TDP" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+              <img src="assets/img/portfolio/SDG.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>Skilled Digital Gaming</h4>
+                <p>Welcome to Skilled Digital Gaming, your ultimate gaming platform designed by gamers, for gamers. Here, we're dedicated to providing you with an unparalleled gaming experience that transcends boundaries.</p>
+                <a href="assets/img/portfolio/SDG.jpg" title="The Diva Project" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="SDG" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+      
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-android">
+              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" style="height:230px">
+              <div class="portfolio-info">
+                <h4>ChikaGPT</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-3.jpg" title="ChikaGPT" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> --><!-- End Portfolio Item -->
+
+         
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+   
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+
+              <div class="container section-title" data-aos="fade-up">
+        <h2>Character References</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <br/> <br/>
+          <div class="swiper-wrapper">
+
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                                <img src="assets/img/testimonials/male.png" class="testimonial-img" alt="">
+            
+                <h3>John Paul Oropesa</h3>
+                <h4>Senior Java Developer</h4>
+                <div class="bi-telephone">
+                +639 562 303 528
+                </div>
+              
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/male.png" class="testimonial-img" alt="">
+                <h3>Mark Frederick Set</h3>
+                <h4>Technical Team Leader</h4>
+                <div class="bi-telephone">
+                 +639 063 706 412
+                </div>
+         
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/female.png" class="testimonial-img" alt="">
+                <h3>Jeanely Esperanza</h3>
+                <h4>Academic Program Head (IT Department)</h4>
+                <div class="bi-telephone">
+                +639 261 997 200
+                </div>
+                
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/male.png" class="testimonial-img" alt="">
+                <h3>Benedict Lim</h3>
+                <h4>Head (Software Development Department)</h4>
+                <div class="bi-telephone">
+                  +639 174 637 120
+                </div>
+               
+              </div>
+            </div><!-- End testimonial item -->
+
+   
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>3116 Villa Amparo Bayan Luma 4 City of Imus, Cavite</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+639 166 377 259</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email<br></h3>
+                  <p>lapuzearlgerald86@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>Earl Gerald Lapuz</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=lapuzearlgerald86@gmail.com"><i class="bi bi-envelope" ></i></a>
+        <a target="_blank" href="https://www.facebook.com/theearle"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/_theearle/"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/earl-gerald-lapuz-2b3787262/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Reach me on my <a href="#">Social Media</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
