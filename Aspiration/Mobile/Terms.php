@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+ 
+    <title>Aspiration Gaming</title>
+
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+<!--
+
+Lava Landing Page
+
+https://templatemo.com/tm-540-lava-landing-page
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.php" class="logo">
+                            <img src= assets/images/logo.png  height="60px" align=""><h6>Aspiration Gaming</h6>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.php">Home</a></li>
+                          
+                            </li>
+                          
+                           
+                           
+                            <li class="scroll-to-section"><a href="Privacy.php" >Privacy Policy</a></li>
+                             <li class="scroll-to-section"><a href="Terms.php" class="menu-item" style="color:#0bc3fb"  >Terms and Conditions</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+ <br/><br/>
+
+
+<br/><br/><br/><br/><br/><br/>
+    <div class="welcome" >
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+
+            
+                        <div align="center" class="right-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                  <h2>Important Notification </h2>
+                        <br/> <br/>
+                        <p align="justify">We have started providing Services on Krishtee Technology India Private Limited with effect from April 01 2020. Krishtee Technology India Private Limited offers online games including and not limited rummy which are also linked in our partner website(s) and mobile application(s) (collectively referred to as the “Portal”).Any person utilizing the Portal or any of its features including participation in the various contests, games (“Game”) (“Amusement Facilities”) being conducted on the Portal, be referred to as “User” or “you” or “your” and shall be bound by this Terms of Service Privacy Policy.
+
+As per changes made to the Telangana State Gaming Act 1974, online games of skill for prizes has been banned in the State of Telangana. In compliance with these changes, we have made changes to our services and have stopped offering online games for prizes in Telangana. In addition to this we also do not offer our services in the states of Nagaland and Sikkim. If you access the Service for making deposits or playing Games from a jurisdiction where Games are not permitted, you shall be entirely liable for any legal or penal consequences and we shall be entitled to forfeit the balance in your account.</p> 
+                         <br/> <br/>
+                       
+                    </div>
+
+                    
+            
+                        <div align="center" class="right-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                  <h2>Introduction </h2>
+                        <br/> <br/>
+                        <p align="justify">Your use of the products and/or services on the Portal (hereinafter referred to as “Services”) currently offered or to be offered in future by Krishtee Technology India Private Limited, its subsidiaries, affiliates, licensors, associates and partners (hereinafter referred as “Krishtee Technology India Private Limited”) through the Portal and the Krishtee Technology India Private Limited and apps (hereinafter referred as “App” or “Apps”), are all subject to and governed by these Terms of Service, Privacy Policy, Help, Promotions, My Account and Bring-A-Friend sections collective or respectively for each Website including the sub-sections of these sections on the Website and App, as the case may be (hereinafter referred as “Terms”). You understand that the Terms will be binding on you. You agree that Services offered on the Portal can be accessed only in accordance with the Terms and you shall be responsible to comply with the Terms at all times. You are responsible to be aware of and agree to abide by the Terms as published and periodically amended or modified by Krishtee Technology India Private Limited.
+
+If any of the Terms are determined to be unlawful, invalid, void or unenforceable for any reason by any judicial or quasi – judicial body in India, it will not affect the validity and enforceability of the remaining Terms. Our failure or delay to act or exercise any right or remedy with respect to a breach of any of the Terms by you shall not be construed as a waiver of our right to act with respect to the said breach or any prior, concurrent, subsequent or similar breaches. If a promotion, game, event, competition or tournament is organized by us on a Portal, it shall be governed by the Terms and any supplementary terms and conditions which may be specifically applied for that promotion, game, event, competition or tournament.</p> 
+                         <br/> <br/>
+                       
+                    </div>
+  
+            
+                        <div align="center" class="right-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                  <h2>Applicability </h2>
+                        <br/> <br/>
+                        <p>BEFORE REGISTERING WITH US, YOU SHOULD CAREFULLY READ AND REVIEW THESE TERMS PROVIDED ON Krishtee Technology India Private Limited WHICH ARE APPLICABLE TO ALL SERVICES ON THE PORTAL AND ALSO THE PRODUCT-SPECIFIC CONDITIONS AND RULES APPLICABLE TO SPECIFIC OFFERINGS. Links to the following sections of these Terms are provided below for easy access to the sections you intend to refer to. However, you should read all Terms as you will be bound by them all. Click on any of the following links to access that section directly.</p> 
+                         <br/> <br/>
+                       
+                    </div>
+
+                        
+            
+                        <div align="center" class="right-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.3s after 0.2s">
+                  <h2>1. Legality</h2>
+                        <br/> <br/>
+                        <p align="justify">You may only use the Services to Play Games (as defined below) if you are 18 years of age or over. Access to our Services or any part thereof may be restricted by us from time to time in our sole decision. You confirm that you are not accessing the Services to play Games from:-</p> 
+                         <br/> <br/>
+                       
+                    </div>
+
+
+            
+                        <div align="center" class="right-text col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                        >
+               
+                        <br/> <br/>
+                        <p align="justify">1. Players form Assam, Telangana, Orissa, West Bengal, Sikkim, Nagaland, Andhra Pradesh, Tamil Nadu, kerela are not allowed to play online rummy.</p>
+
+
+
+                            <br/><br/>
+<p align="justify">2. Game Services All tournaments, promotional games, practice games and games organized on the Websites are collectively referred to as “Games”. The rules applicable to each type of Game are provided under the Help section on the respective Website and App. All other Games offered on the Portal are defined as Non-Cash Game(s). Non-Cash Games are offered free on the Portal, but may be subject to entry restrictions in some cases. Service charges charged by us are inclusive of all applicable taxes, including GST.
+
+</p>
+
+ <br/><br/>
+<p align="justify">3. User representations Any information provided by you to us, whether at the stage of registration or during anytime subsequently, should be complete and truthful. Prior to adding coin to your user account or participating in Games, you shall be responsible to satisfy yourself about the legality of playing Games in the jurisdiction from where you are accessing Games. If you are not legally competent to individually enter into Indian Rupee transactions through banking channels in India and/or are not accessing any Website from a permitted jurisdiction, you are prohibited from participating in Games on the website. In the event of such violation, your participation in Games will be deemed to be in breach of the Terms and you will not be entitled to receive any prize that you might win in such Games. You represent that you are 18 years of age or older to participate in any Games and are also otherwise competent to enter into transactions with other users and us. You are aware that participation in the Games organized by us (“Activity”) may result in financial loss to you. With full knowledge of the facts and circumstances surrounding this Activity, you are voluntarily participating in the Activity and assume all responsibility for and risk resulting from your participation, including all risk of financial loss. You agree to indemnify and hold us, our employees, directors, officers, and agents harmless with respect to any and all claims and costs associated with your participation in the Activity. You represent that you have the experience and the requisite skills required to participate in the Activity and that you are not aware of any physical or mental condition that would impair your capability to fully participate in the Activity. You further acknowledge that you are solely responsible for any consequence resulting from you participating in this Activity or being associated with this Activity or around this Activity. You understand that we assume no liability or responsibility for any financial loss that you may sustain as a result of participation in the Activity. You understand and accept that your participation in a Game available on the Portal does not create any obligation on us to give you a prize. Your winning of a prize is entirely dependent on your skill as a player vis-a- vis other players in the Game and subject to the rules of the Game. You understand and agree that you are solely responsible for all content posted, transmitted, uploaded or otherwise made available on the Portal by you. All content posted by you must be legally owned by or licensed to you. By publishing any content on the Website, you agree to grant us a royalty-free, world-wide, non- exclusive, perpetual and assignable right to use, copy, reproduce, modify, adapt, publish, edit, translate, create derivative works from, transmit, distribute, publicly display, and publicly perform your content and to use such content in any related marketing materials produced by us or our affiliates. Such content may include, without limitation, your name, username, location, messages, gender or pictures. You also understand that you do not obtain any rights, legal or equitable, in any material incorporating your content. You further agree and acknowledge that we have the right to use in any manner whatsoever, all communication or feedback provided by you. You understand and accept that we reserve the right to record any and all user content produced by way of but not limited to chat messages on the Portal through our feature, through the in-game chat facility or other interactive features, if any, offered as part of the Services. You understand that the funds in your user account held by us do not carry any interest or return. You shall not hold us responsible for not being able to play any Game for which you may be eligible to participate. This includes but is not limited to situations where you are unable to log into your user account as your user account may be pending validation or you may be suspected or established violation of any of the Terms. You understand and accept that by viewing or using the Portal or availing of any Services, or using communication features on the Portal, you may be exposed to content posted by other users which you may find offensive, objectionable or indecent. You may bring such content posted by other users to our notice that you may find offensive, objectionable or indecent and we reserve the right to act upon it as we may deem fit. The decision taken by us on this regard shall be final and binding on you. We are in compliance with FATF guidelines and therefore you are also required to comply with the FATF guidelines. By using our Portal, you undertake to comply with the FATF guidelines. You represent that you are not a politically exposed person. You represent that you have not been convicted for any crime.You represent that you are not on the UN Sanctions List or work for a company that is on the UN Sanctions list.
+
+</p>
+
+<br/><br/>
+<p align="justify">4. User Account Creation & OperationTo use our Services, you will need to register with us on the Portal.By completing the online registration process on the Portal, you confirm your acceptance of the Terms.By registering on our Portal, you agree to receive all communication from us including promotional messages relating to Tournaments & Bonus through SMS, voice call, Email and Push Notifications. You may withdraw your consent by sending an email to support as the case may be.During the registration process, you will be required to choose a login name and a password in addition to providing some other information which may not be mandatory. Additionally, you may be required to give further personal information for your user account verification and/or for adding to your user account. You must give us the correct details in all fields requiring your personal information, including, without limitation, your name, postal address, email address, telephone number(s) etc. You undertake that you will update this information and keep it current.You acknowledge that we may, at any time, required to verify the correctness of this information and in order to do so may require additional documentary proof from you, failing which we reserve the right to suspend or terminate your registration on the Website.Any information provided by you to us should be complete and truthful to the best of your knowledge. We are not obliged to cross check or verify information provided by you and we will not take any responsibility for any outcome or consequence as a result of you providing incorrect information or concealing any relevant information from us.You understand that it is your responsibility to protect the information you provide on the Websites including but not limited to your Username, Password, Email address, Contact Details and Mobile number. We will not ask for your user account login password which is only to be entered at the time of login. At no other time should you provide your user account information to any user logged in on the Websites or elsewhere. You undertake that you will not allow / login and then allow any other person to play from your user account using your username. You specifically understand and agree that we will not incur any liability for information provided by you to anyone which may result in your user account on the Websites being exposed or misused by any other person.You agree to use your user account with us, solely for the purpose of playing on the Websites and the Apps and for transactions which you may have to carry out in connection with availing the Services thereon. Use or attempted use of your user account for any reason other than what is stated in the Terms may result in immediate termination of your user account and forfeiture of any prize, award in the user account. You also understand and agree that deposits in your user account maintained with us are purely for the purpose of participation in Games made available on the Portal.You understand and agree that you cannot transfer any sum from your user account with us to the account of another registered user on the Portal except as may be permitted by us and is subject to restrictions and conditions as may be prescribed.
+
+</p>
+
+<br/><br/>
+<p align="justify">5. User Account validation and personal information verification Krishtee Technology India Private Limited may from time to time attempt to validate its players’ user accounts. These attempts may be made via a phone call or via email. In the event that we are not able to get in touch with you the first time around, we will make additional attempts to establish contact with you. If the phone number and email provided by you is not correct, we bear no responsibility for the Services being interrupted due to our being unable to establish contact with you.If we are unable to reach you or if the validation is unsuccessful, we reserve the right to disallow you from logging into the Portal or reduce your play limits and/or Add limits until we are able to satisfactorily validate your user account. We will in such events email you to notify you of the next steps regarding user account validation. We may also ask you for proof of identification and proof of address from time to time.Upon receipt of suitable documents, we will try our best to enable your user account at the earliest. However, it may take a few business days to reinstate your user account.com the event that we have made several attempts to reach out to you but have been unable to do so, we also reserve the right to permanently suspend your user account and refund the amount, if any, in your user account to the financial instrument through which the payment was made to your user account or by cheque to the address provided by you. In the event the address provided by you is incorrect, We will not make any additional attempts for delivery of the cheque unless a correct address is provided by you and charges for redelivery as prescribed by us are paid by you.The Privacy Policy of our Portal form a part of the Terms. All personal information which is of such nature that requires protection from unauthorized dissemination shall be dealt with in the manner provided in the Privacy Policy of the Portal.
+
+</p>
+
+<br/><br/>
+<p align="justify">6. User restrictions Anti-Cheating and Anti-Collusion:You undertake that you yourself will play in all Games in which you have registered/joined and not use any form of external assistance to play. You shall not add unauthorized components, create or use cheats, exploits, bots, hacks or any other third-party software designed to modify the Websites or use any third-party software that intercepts, mines or otherwise collects information from or through the Websites or through any Services. Any attempt to employ any such external assistance is strictly prohibited.Formation of teams for the purpose of collusion between you and any other user(s) for participating in Games organized on the Websites or any other form of cheating is strictly prohibited.When collusion or cheating is detected on www.RRummy.com, we shall settle the Game as per its “Game Cancellation Settlement Policy” and may take further appropriate action against offending users in terms hereof including banning access to the Portal and any or all Services.Money Laundering: You are prohibited from doing any activity on the Website that may be construed as money laundering, including, without limitation, attempting to withdraw from unutilized coins added through credit cards or deliberately losing money to a certain player(s).Anti-SPAMMING: Sending SPAM emails or any other form of unsolicited communication for obtaining registrations on the Website to benefit from any of our promotional program or for any other purpose is strictly prohibited.Multiple IDs: Your registration on the Portal is restricted to a single user account which will be used by you to avail the Services provided on the Portal. You are prohibited from creating or using multiple user IDs for registering on the Portal.You may not create a login name or password or upload, distribute, transmit, publish or post content through or on the Websites or through any service or facility including any messaging facility provided by the Websites which : is libelous, defamatory, obscene, intimidating, invasive of privacy, abusive, illegal, harassing;contains expressions of hatred, hurting religious sentiments, racial discrimination or pornography;is otherwise objectionable or undesirable (whether or not unlawful);would constitute incitement to commit a criminal offence;violates the rights of any person;is aimed at soliciting donations or other form of help;violates the intellectual property of any person;disparage in any manner Krishtee Technology India Private Limited or any of its subsidiaries, affiliates, licensors, associates, partners, sponsors, products, services, or websites;promotes a competing service or product; orviolates any lawsIn the event we determine that the login name created by you is indecent, objectionable, offensive or otherwise undesirable, we shall notify you of the same and you shall promptly provide us with an alternate login name so that we can change your existing login name to the new name provided by you. If you fail to provide an alternate name, we reserve the right to either permanently suspend your user account or restore your user account only after a different acceptable login name has been provided by you.You shall not host, intercept, emulate or redirect proprietary communication protocols, used by the Portal, if any, regardless of the method used, including protocol emulation, reverse engineering or modification of the Portal or any files that are part of the Portal.You shall not frame the Portal. You may not impose editorial comments, commercial material or any information on the Websites, alter or modify Content on the Websites, or remove, obliterate or obstruct any proprietary notices or labels.You shall not use Services on the Portal for commercial purposes including but not limited to use in a cyber cafe as a computer gaming centre, network play over the Internet or through gaming networks or connection to an unauthorized server that copies the gaming experience on the Website.You shall not upload, distribute or publish through the Portal, any content which may contain viruses or computer contaminants (as defined in the Information Technology Act 2000 or such other laws in force in India at the relevant time) which may interrupt, destroy, limit the functionality or disrupt any software, hardware or other equipment belonging to us or that aids in providing the services offered by us. You shall not disseminate or upload viruses, programs, or software whether it is harmful to the Websites or not. Additionally, you shall not impersonate another person or user, attempt to get a password, other user account information, or other private information from a user, or harvest email addresses or other information.You shall not purchase, sell, trade, rent, lease, license, grant a security interest in, or transfer your user account, Content, points, standings, rankings, ratings, or any other attributes appearing in, originating from or associated with the Portal.Any form of fraudulent activity including, attempting to use or using any other person’s credit card(s), debit cards, net-banking usernames, passwords, authorization codes, mobile phones for adding coins to your user account is strictly prohibited.Accessing or attempting to access the Services through someone else’s user account is strictly prohibited.Winnings, prizes are unique to the player and are non-transferable. In the event you attempt to transfer any winnings, prizes, these will be forfeited.If you are an officer, director, employee, consultant or agent of Krishtee Technology India Private Limited or a relative of such persons (“Associated Person”), you are not permitted to play either directly or indirectly, any Games which entitle you to any prize on the Portal, other than in the course of your engagement with us. For these purposes, the term ‘relative’ shall include spouse and financially dependent parents and, children.You shall not post any material or comment, on any media available for public access, which in our sole discretion, is defamatory or detrimental to our business interests, notwithstanding the fact that such media is not owned or controlled by us. In addition to any other action that we may take pursuant to the provision hereof, we reserve the right to remove any and all material or comments posted by you and restrict your access to any media available for public access that is either controlled or moderate by us; when in our sole opinion, any such material or comments posted by you is defamatory or detrimental to our business interests.We don’t encourage accessing Games using your ID on two or more mobile devices simultaneously. In such an event, we reserve the right to disallow continuation of games from the earlier logged in device(s).
+
+</p>
+
+<br/><br/>
+<p align="justify">7. Payments and Player FundsAll transactions on the Portal shall be in Indian Rupees.Once you register on our Portal, we maintain a user account for you to keep a record of all your transactions with us. Payments connected with participation in Games have to be made through your Krishtee Technology India Private Limited user account. All coins prizes won by you are credited by us into this user account.When making a payment, please ensure that the instrument used to make the payment is your own and is used to Add Coins into your user account only.Subject to the Add Coins limits specified by us from time to time, you are free to deposit as much money as you want in your user account for the purpose of participating in Games on the Portal.Krishtee Technology India Private Limited wants you to play responsibly on the Websites. The ability to Add Coins in your user account shall be subject to monthly Add Coins limits which we can be set by us with undertakings, indemnity, waiver and verification conditions as we deem appropriate in our sole discretion.Credit card, Debit card and internet banking payments are processed through third party payment gateways. Similarly, other payment modes also require an authorization by the intermediary which processes payments. We are not responsible for delays or denials at their end and processing of payments will be solely in terms of their policies and procedures without any responsibility or risk at our end. If there are any issues in connection with adding coins, a complaint may be sent to us following the complaints procedure provided in “Complaints and disputes” section below. You agree that in such an event of your credit being delayed or eventually declined for reasons beyond our control, we will not be held liable in any manner whatsoever. Once a payment/transaction is authorized, the funds are credited to your user account and are available for you to play Games.We have the right to cancel a transaction at any point of time solely according to our discretion in which case if the payment is successful, then the transaction will be reversed, and the money credited back to your payment instrument.Player funds are held in trust by us in specified bank accounts. Krishtee Technology India Private Limited keeps all players’ funds unencumbered which will be remitted to you in due course subject to the terms and conditions applicable to withdrawal of funds. Funds held in your user account are held separately from our corporate funds. Even in the highly unlikely event of an insolvency proceeding, your claims on the deposits will be given preference over all other claims to the extent permissible by law.
+
+</p>
+
+<br/>
+
+<br/>
+<p align="justify">8. Service Disruptions You may face Service disruptions, including, but not limited to disconnection or communication interferences due to issues in the internet infrastructure used for providing or accessing the Services or due to issues with the hardware and software used by you. You understand that Krishtee Technology India Private Limited has no control over these factors. Krishtee Technology India Private Limited shall not be responsible for any interruption in Services and you take full responsibility for any risk of loss due to Service interruptions for any such reason.You understand, acknowledge and agree to the fact that if you are unable to play in any Game due to any error or omission directly attributable to Krishtee Technology India Private Limited, including technical or other glitches at our end, the settlement of such Games will be as per the “Game Cancellation” Settlement Policy for Krishtee Technology India Private Limited.com and entry fee would be refunded in the case of .com.The Company shall attempt to start the game immediately once minimum number of players join the game table. However, the Company doesn’t commit the same and there may be delays in commencement of the game due to any reason whatsoever. It is clarified that, notwithstanding any limitation of liability as specified herein, Krishtee Technology India Private Limited specifically disclaims any liability in the case of Games where there is no money paid by you. You agree that under no circumstances shall you compel Krishtee Technology India Private Limited or hold Krishtee Technology India Private Limited liable to pay you any amount over and above the service charges for any of the aforementioned errors/omissions of Krishtee Technology India Private Limited.
+
+</p>
+
+<br/>
+
+<br/>
+<p align="justify">9. Content All content and material on the Portal including but not limited to information, images, marks, logos, designs, pictures, graphics, text content, hyperlinks, multimedia clips, animation, games and software (collectively referred to as “Content”), whether or not belonging to Krishtee Technology India Private Limited, are protected by applicable intellectual property laws. Additionally, all chat content, messages, images, recommendations, emails, images sent by any user can be logged/recorded by us and shall form part of Content and Krishtee Technology India Private Limited is free to use this material in any manner whatsoever.The Portal may contain information about or hyperlinks to third parties. In such cases, we are not responsible in any manner and do not extend any express or implied warranty to the accuracy, integrity or quality of the content belonging to such third party websites or apps. If you rely on any third party Content posted on any website or app which does not belong to Krishtee Technology India Private Limited, you may do so solely at your own risk and liability.If you visit any third party website or app through a third party Content posted on the Portal, you will be subject to terms and conditions applicable to such third party website or app. We neither control nor are responsible for content on such third-party websites or apps. The fact of a link existing on our Portal to a third-party website or app is not an endorsement of that website or app by us.
+
+</p>
+
+<br/>
+
+<br/>
+<p align="justify">10. License Agreement & Intellectual PropertyAll Content on the Websites shall be utilized only for the purpose of availing Services in conformity with the Terms.You acknowledge that all ownership rights and all copyright and other intellectual property rights in the Content are owned by Krishtee Technology India Private Limited or our licensors and that you have no right title or other interest in any such items except as expressly stated in the Terms.You are granted a personal, non-exclusive, non-assignable and non-transferable license to use the Content solely for the purposes of accessing and using the Services and for no other purpose whatsoever.You shall not sublicense, assign or transfer the license granted to you, or rent or lease or part with the whole or any part of such license or of the Content included in such license.You may not transfer, copy, reproduce, distribute, exploit, reverse engineer, disassemble, translate, decode, alter, make derivations from or make any other use of Content on the Websites in any manner other than as permitted for obtaining the Services provided on the website.You may not hyperlink the Portal to any other website without permission from us.You may access information on download and print extracts from the Portal for your personal use only. No right, title or interest in any downloaded materials or software is transferred to you by downloading and you are expressly prohibited from using such materials for any commercial purpose unless agreed with us in writing
+</p>
+
+<br/>
+<br/>
+<p align="justify">11. Voluntary termination You are free to discontinue use of the Services on any Website at any time by intimating us of your desire to do so by sending an email to us at support as the case may be. If at such time, there is a positive coin balance in your user account, we will, subject to satisfactory verification, disburse the same to you by online transfer.
+
+</p>
+
+<br/><br/>
+<p align="justify">12. User Account suspension We may suspend or otherwise put restrictions on your access to the Services on the Websites during investigation for any of the following reasons:Suspected violation of Terms or other abuse of your user account;Suspected breach of security of your user account; orIf there have been charge-backs on your user account.Our decision to suspend or restrict Service or any part thereof as we deem appropriate shall be final and binding on you.
+
+</p>
+<br/>
+<p align="justify">13. Breach and consequencesIn the event of breach of any of the Terms being evidenced from our investigation or if there is reasonable belief, in our sole discretion, that your continued access to the Portal or any Website is detrimental to the interests of Krishtee Technology India Private Limited, our other users or the general public; we may in our sole discretion take any or all of the following actions:Restrict games between users suspected of colluding or cheating;Permanently suspend your user account on the Website;Forfeit the balance in your user account;Demand damages for breach and take appropriate civil action to recover such damages; and/orInitiate prosecution for violations that amount to offences in law.Additionally, in the event of committing material breach hereof, we reserve the right to bar you from future registration on the Website.The decision of Krishtee Technology India Private Limited on the action to be taken as a consequence of breach shall be final and binding on you.Any action taken by Krishtee Technology India Private Limited shall be without prejudice to our other rights and remedies available in law or equity.
+
+</p>
+<br/>
+<p align="justify">14. Complaints, Grievances & disputesIf you have a complaint, you should in the first instance contact the customer support team at support as the case may be or write to us following the procedure given in the respective Contact Us section on the relevant Websites. Complaints should be made as soon as possible after circumstances arise that cause you to have a complaint.You accept that any complaints and disputes are and remain confidential both whilst a resolution is sought and afterwards. You agree that you shall not disclose the existence, nature or any detail of any complaint or dispute to any third party.Krishtee Technology India Private Limited shall make efforts to resolve complaints within reasonable time.Our decision on complaints shall be final and binding on you.
+
+</p>
+<br/>
+<p align="justify">15. Modifications and alterationsWe may alter or modify the Terms at any time without giving prior notice to you. We may choose to notify of some changes in the Terms either by email or by displaying a message on the Portal; however, our notification of any change shall not waive your obligation to keep yourself updated about the changes in the Terms. Your continued use of any Portal and/or any Services offered constitutes your unconditional acceptance of the modified or amended Terms.We may also post supplementary conditions for any Services that may be offered. In such an event, your use of those Services will be governed by the Terms as well as any such supplementary terms that those Services may be subject to.
+
+</p>
+<br/>
+<p align="justify">16. Limitation of liability In addition to specific references to limitation of liability of Krishtee Technology India Private Limited elsewhere in the Terms, under no circumstances (including, without limitation, in contract, negligence or other tort), Krishtee Technology India Private Limited shall not be liable for any injury, loss, claim, loss of coin or loss of opportunity, loss of or damage to property, general damages or any direct, indirect, special, incidental, consequential, exemplary or punitive damages of any kind whatsoever arising out of or in connection with your access to, or use of, or inability to access or use, the Services on any Website or App in the Portal. You further agree to indemnify us and our service providers and licensors against any claims in respect of any such matter. Without limiting the generality of the foregoing, you specifically acknowledge, agree and accept that we are not liable to you for: the defamatory, undesirable or illegal conduct of any other user of the Services;any loss whatsoever arising from the use, abuse or misuse of your user account or any feature of our Services on the Websites;any loss incurred in transmitting information from or to us or from or to our Websites by the internet or by other connecting media;any technical failures, breakdowns, defects, delays, interruptions, improper or manipulated data transmission, data loss or corruption or communications infrastructure failure, viruses or any other adverse technological occurrences arising in connection with your access to or use of our Services;the accuracy, completeness or currency of any information services provided on the Websites and Apps;any delay or failure on our part to intimate you where we may have concerns about your activities; and your activities / transactions on third party websites or apps Portal accessed through links or advertisements posted in the Portal. Notwithstanding anything to the contrary contained in the Terms or elsewhere, you agree that our maximum aggregate liability for all your claims under this agreement, in all circumstances, other than for the payment of any coin balance in your user account, shall be limited to Indian Rupees ten Thousand per transaction only (INR. 10,000/-)
+
+</p>
+<br/>
+<p align="justify">17. Disclaimer and indemnity DisclaimerThe Services on the Websites and the Content present on it are provided strictly on an “as is” basis with all faults or failings. Any representations, warranties, conditions or guarantee whatsoever, express or implied (including, without limitation, any implied warranty of accuracy, completeness, uninterrupted provision, quality, merchantability, fitness for a particular purpose or non-infringement) are specifically excluded to the fullest extent permitted by law. Krishtee Technology India Private Limited does not ensure or guarantee continuous, error-free, secure or virus- free operation of the Portal or its Content including software, Games, your user account, the transactions in your user account or continued operation or availability of any facility on the website.Additionally, Krishtee Technology India Private Limited does not promise or ensure that you will be able to access your user account or obtain Services whenever you want. It is entirely possible that you may not be able to access your user account or the Services provided by Krishtee Technology India Private Limited at times or for extended periods of time due to, but not limited to, system maintenance and updates.Krishtee Technology India Private Limited disclaims responsibility and liability for any harm resulting from cancellation of any Game organized by it. If you are a player on the Portal, you acknowledge and agree that you will not be entitled to any refund in case of any service outages that may be caused by failures of our service providers, computer viruses or contaminants, natural disasters, war, civil disturbance, or any other cause beyond the reasonable control of Krishtee Technology India Private Limited.Krishtee Technology India Private Limited specifically disclaims any liability in connection with Games or events made available or organized on the Portal which may require specific statutory permissions, in the event such permissions are denied or cancelled whether prior to or during such Game or event.Krishtee Technology India Private Limited specifically disclaims any liability in connection with your transactions with third parties which may have advertisements or are hyperlinked on the Website.Krishtee Technology India Private Limited disclaims any liability in connection with violation of intellectual property rights of any party with respect to third party Content or user content posted on our Website. Intellectual property rights in any Content not belonging to us belong to the respective owners and any claims related to such content must be directly addressed to the respective owners.Krishtee Technology India Private Limited specifically disclaims any liability arising out of the acts or omissions of the infrastructure providers or otherwise failure of internet services used for providing and accessing the Services.Krishtee Technology India Private Limited disclaims liability for any risk or loss resulting to you from your participation in Games, including all risk of financial loss.Random Number Generator Software: iTech Labs Australia has evaluated the Random Number Generator (“RNG”) used by www.RRummy.com and has certified that the software of Krishtee Technology India Private Limited complies with the relevant statistical standards of randomness. You understand that Krishtee Technology India Private Limited maintains the said certification it considers appropriate in the best of its belief, however, it is not possible to test all possible scenarios in any testing environment and Krishtee Technology India Private Limited specifically disclaims any and all liability in connection with the RNG used by Krishtee Technology India Private Limited’s software. Indemnity To the extent permitted by law, and in consideration for being allowed to participate in the Activity, you hereby agree to indemnify, save and hold harmless and defend us (to the extent of all awards, cost of litigation, disbursements and reasonable attorney’s fees that we may incur in connection therewith including any direct, indirect or consequential losses, any loss of coin and loss of reputation) from any claims, actions, suits, taxes, damages, injuries, causes of action, penalties, interest, demands, expenses and/or awards asserted or brought against us by any person in connection with:infringement of their intellectual property rights by your publication of any content on our Website.defamatory, offensive or illegal conduct of any other player or for anything that turns out to be misleading, inaccurate, defamatory, threatening, obscene or otherwise illegal whether originating from another player or otherwise;use, abuse or misuse of your user account on our Website in any manner whatsoever;any disconnections, technical failures, system breakdowns, defects, delays, interruptions, manipulated or improper data transmission, loss or corruption of data or communication lines failure, distributed denial of service attacks, viruses or any other adverse technological occurrences arising in connection with your access to or use of our Website; andaccess of your user account by any other person accessing the Services using your username or password, whether or not with your authorization.
+
+</p>
+<br/>
+<p align="justify">18. Governing law, dispute resolution & jurisdictionThe Terms and Privacy Policy shall be interpreted in accordance with the laws of India.Any dispute, controversy or claim arising out of the Terms or Privacy Policy shall be subject to the exclusive jurisdiction of the civil courts at Mumbai. Responsible Game Play Krishtee Technology India Private Limited encourages all its players to play responsibly. We are committed to helping players who wish to stop playing or who wish to limit the amount that they play.
+
+</p>
+<br/>
+
+
+
+                       
+                    </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+
+
+   
+
+    <!-- ***** Footer Start ***** -->
+    <footer id="#">
+        <div class="container">
+            <div class="footer-content">
+       
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; 2023 Aspiration Gaming
+
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
