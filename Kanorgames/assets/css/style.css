@@ -1,0 +1,85 @@
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .9} 
+  to {opacity: 1}
+}
+
+
+
+.welcome-text{
+
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: black;
+
+}
+
+
+.btn-primary{
+
+  background-color: #09cdeb;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  size: 50px;
+
+
+
+}
+
+.btn-outline{
+
+  color: #03b1fc;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 5px;
+
+
+
+}
+
+.btn-outline {
+  transition-duration: 0.4s;
+}
+
+.btn-outline:hover {
+  background-color: #03b1fc; /* Green */
+  color: white;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/1.jpg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
