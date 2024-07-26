@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Royal Star Overseas</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+
+  <link rel="icon"  href="logo-colored.svg">
+
+
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+    
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	
+	<!--web font-->
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!--//web font-->
+
+
+<?php 
+
+		include('config.html');
+
+
+		?>
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+	<div style="padding-left:10%; padding-right: 10%;" id="home">
+		<nav class="">
+			<div id="logo">
+				<h1> <a href="index.html" class="editContent" data-selector=".editContent"><span class="fa-solid fa-apple-whole" style="color: rgb(48,195,183);"></span> Royal Star Overseas</a></h1>
+			</div>
+			<div class="mx-auto">
+				<label for="drop" class="toggle mt-lg-0 mt-3">Menu</label>
+				<input type="checkbox" id="drop" />
+				<ul class="menu mt-lg-4">
+					<li class=" mr-lg-2 mr-1 active"><a href="#">Home</a></li>
+					<li class=" mr-lg-2 mr-1"><a href="#about">About</a></li>
+					<li><a href="#gallery">Our Gallery</a></li>
+						<li><a href="#facts">Agriculture Facts</a></li>
+			<li class=" mr-lg-2 mr-1"><a href="#services">Services</a></li>
+					<li class="dropdown-menu-padding">
+					<!-- First Tier Drop Down -->
+					<li class="dropdown-menu-padding">
+					<!-- First Tier Drop Down -->
+					<label for="drop-2" class="toggle">Transact <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+					<a href="#">Transact <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+					<input type="checkbox" id="drop-2"/>
+					<ul>
+						<li><a href="#gallery">Buy Now</a></li>
+						<li><a href="#gallery">Pay Now</a></li>
+						<li><a href="#gallery">Bulk Order</a></li>
+							<li><a href="#gallery">Pre-Order</a></li>
+								<li><a href="#gallery">Advance Book</a></li>
+					</ul>
+					</li>
+					<li><a href="Privacy.html" target="_blank">Privacy Policy</a></li>
+						<li><a href="terms.html" target="_blank">Terms & Conditions</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li class="buttons ml-lg-3">
+						<span class="fa fa-phone circle-sm"></span>
+					</li>
+					<li><p class="text-white">  +919 833 788 226</p></li>
+
+
+
+
+				
+			</div>
+		</nav>
+	</div>
+</header>
+
+
+
+<style type="text/css">
+	
+	.circle-sm{
+
+		background-color: white;
+		border-radius: 50%;
+		color: red;
+		width: 15px;
+		height: 15px;
+		padding: 10px;
+
+
+	}
+
+
+</style>
+<!-- //header -->
+
+<div class="csslider infinity" id="slider1">
+  <input type="radio" name="slides" checked="checked" id="slides_1"/>
+  <input type="radio" name="slides" id="slides_2"/>
+  <input type="radio" name="slides" id="slides_3"/>
+  <input type="radio" name="slides" id="slides_4"/>
+  <ul>
+    <li>
+		<div id="bg">
+			<div class="container">
+				<div class="banner-text">
+				  <h6> Fresh Agriculture Products</h6>
+				  <h3> We Serve Fresh and Juicy Fruits From Our Farm</h3>
+				</div>
+			</div>
+		</div>
+    </li>
+    <li>
+        <div id="bg1">
+			<div class="container">
+				<div class="banner-text">
+				  <h6> Fresh Agriculture Products</h6>
+				  <h3> We Serve Fresh and Juicy Fruits From Our Farm</h3>
+				</div>
+			</div>
+        </div>
+    </li>
+    <li>
+		<div id="bg2">
+			<div class="container">
+				<div class="banner-text">
+				  <h6> Fresh Agriculture Products</h6>
+				  <h3> We Serve Fresh and Juicy Fruits From Our Farm</h3>
+				</div>
+			</div>
+        </div>
+    </li>
+    <li>
+		<div id="bg3">
+			<div class="container">
+				<div class="banner-text">
+				  <h6> Fresh Agriculture Products</h6>
+				  <h3> We Serve Fresh and Juicy Fruits From Our Farm</h3>
+				</div>
+			</div>
+		</div>
+    </li>
+	
+  </ul>
+  <div class="arrows">
+    <label for="slides_1"></label>
+    <label for="slides_2"></label>
+    <label for="slides_3"></label>
+    <label for="slides_4"></label>
+  </div>
+  <div class="navigation"> 
+    <div>
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+      <label for="slides_4"></label>
+    </div>
+  </div>
+</div>
+
+<!-- //banner -->
+
+<!-- about -->
+<section class="about py-5" id="about">
+	<div class="container py-md-3">
+		<h3 class="heading text-center mb-md-5 mb-4">About Us</h3>
+		<div class="row about-grids agile-info">
+			<div class="col-lg-6 mb-lg-0 w3-agile-grid mb-5">
+				<h4 class="mb-4">Welcome to Royal Star Overseas</h3>
+				<p class="mb-5">Royal Star Overseas is one of the leading Supplier/Retailer/Wholeseller/ Exporter/Importer & E-Commerce of various kind of Agricultural products and groceries based in Mumbai Maharashtra since 2016 Right from fresh Fruits and Vegetables, Rice and Dals, Spices and Seasonings to Packaged products, Beverages, Personal care products, Meats – we have it all. Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at the lowest prices.
+</p>
+				
+			</div>
+			<div class="col-lg-6 col-md-8 w3-agile-grid pr-md-0">
+				<img src="images/about.jpg" class="img-fluid" />
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //about -->
+
+
+<section class="work" >
+	<div class="work-layer py-5">
+	<div class="container py-md-1" style="height:200px;">
+
+			
+	
+		
+		</div>
+	</div>
+</section>
+<section class="gallery py-5" id="gallery">
+	<div class="container py-3">
+		<h3 class="heading text-center mb-lg-5 mb-4">Our Gallery</h3>
+		<div class="row gallery_grid-more project-grids w3ls">
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/g3.jpg" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Strawberry</p>
+					<p class="price">$100.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm1">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/g4.jpg" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Pineapple</p>
+					<p class="price">$200.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm2">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/g5.jpg" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Apple</p>
+					<p class="price">$150.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm3">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/g6.jpg" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Orange</p>
+					<p class="price">$300.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm4">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/g7.jpg" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Cherry</p>
+					<p class="price">$200.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm5">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/IMG-64465cbbb49136.77338809.jpg" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Lemon</p>
+					<p class="price">$250.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm6">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/IMG-64466397e9eda0.75729991.png" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Persimon</p>
+					<p class="price">$350.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm7">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+
+			<div class="col-lg-3 col-md-4 col-6 px-1 w3layoutsits_w3layouts_gallery_grid1">
+
+
+
+
+					<style type="text/css">
+						
+
+						.img-prod{
+
+
+							height: 280px;
+							width: 100%;
+						}
+					</style>
+
+				<div class="gallery-border">
+					
+						<img src="images/IMG-644665f44727b1.20395649.png" alt=" " class="img-prod">
+			
+					<div align="center">
+					<p class="prod">Lychee</p>
+					<p class="price">$200.00 USD</p>
+
+				 <button type="btn-sm btn-success fa-shake" class="btn btn-success" data-toggle="modal" data-target="#modal-sm8">
+                   <svg class="svg-inline--fa fa-basket-shopping fa-shake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg><!-- <i class="fa-solid fa-basket-shopping fa-shake"></i> Font Awesome fontawesome.com -->Purchase
+                </button>
+					<br><br>
+				</div>
+			</div>
+			</div>
+
+
+
+
+			
+		</div>
+	</div></section>
+
+
+<style type="text/css">
+	
+	.prod{
+
+  font-weight: bold;
+  color: green;
+ font-size: 20px;
+
+}
+
+.price{
+
+  font-weight: bold;
+  color: yellowgreen;
+ font-size: 20px;
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="service-bottom bg py-5" id="facts">
+	<div class="container">
+		<!-- Counter -->
+		<div class="py-lg-5 py-3">
+			<h3 class="heading text-center text-white mb-lg-5 mb-4">Agricultural Facts</h3>
+			<div class="row ">
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid">
+					<div class="counterinfo agile-info">
+						<p class="counter">146</p> 
+						<h3>Business Growth</h3>
+					</div>
+				</div>
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid">
+					<div class="counterinfo agile-info">
+						<p class="counter">1500</p> 
+						<h3>Fruits Supplied</h3>
+					</div>
+				</div>
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid mt-md-0 mt-4">
+					<div class="counterinfo agile-info">
+						<p class="counter">15+</p>
+						<h3>Years Experience</h3>
+					</div>
+				</div>
+				<div class="col-md-3 text-center col-6 agileits_w3layouts_about_counter_left w3-agile-grid mt-md-0 mt-4">
+					<div class="counterinfo agile-info">
+						<p class="counter">150+</p>
+						<h3>Agriculture Farmers</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //Counter -->
+	</div>
+</section>
+
+
+
+<section class="services py-5" id="services">
+	<div class="container py-md-5">
+		<h3 class="heading text-center mb-lg-5 mb-4">Our Services</h3>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 w3-agile-grid">
+
+
+				<h4><span class="fa fa-lemon circle"></span> Supplier</h4>
+				<p>A supplier is a person or business that provides a product or service to another entity. The role of a supplier in a business is to provide high-quality products from a manufacturer at a good price to a distributor or retailer for resale.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-sm-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-store circle"></span> Retailer</h4>
+				<p>A retailer is a business that finds, buys and gathers products or services from multiple suppliers and sells them to consumers. Retailers provide value by offering consumers a wide selection of products and services in one place.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-lg-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-usd circle" aria-hidden="true"></span> Wholesaler</h4>
+				<p> Wholesaler is a person or company who sells products in bulk to various outlets or retailers for onward sale, either directly or through a middleman. </p>
+			</div>
+			
+			</div>
+<br/><br/>
+
+			<div class="row">
+			<div class="col-lg-4 col-sm-6 w3-agile-grid">
+				<h4><span class="fa fa-share circle"></span> Exporter</h4>
+				<p>The exporter is a person, company or entity sending or transporting the goods out of the country.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-sm-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-download circle"></span> Importer</h4>
+				<p>Importer is a person, company or entity buying or transporting goods from another country into the importer's home country.</p>
+			</div>
+			<div class="col-lg-4 col-sm-6 mt-lg-0 mt-5 w3-agile-grid">
+				<h4><span class="fa fa-mobile-screen-button circle" aria-hidden="true"></span> Agricultural E-commerce</h4>
+				<p>Agriculture e-commerce services can reduce post-harvest waste by minimizing the number of intermediaries farmers need to liaise with, improve access to more efficient transportation, and quicker access to quality storage facilities.</p>
+
+
+			</div>
+			
+			</div>
+			
+		</div>
+	</div>
+	</div>
+</section>
+
+
+
+<style type="text/css">
+	.circle{
+
+
+
+	background-color: #dc3545;
+	color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+ 
+  padding: 20px;
+	}
+
+
+</style>
+
+
+<?php
+
+$sql = "SELECT * FROM tbl_products where fld_Status='Active' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+
+                      while($row = mysqli_fetch_assoc($result)) {
+
+
+?>
+
+
+
+
+<div class="modal fade" id="modal-sm<?php echo $row['fld_product_Id'] ?>">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"><?php echo $row['fld_product_name'] ?></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            	<img src="images/<?php echo $row['fld_pic'] ?>" alt="Popup Image" class="img-fluid" />
+
+	<br/><br/>
+
+
+<div align="center">
+
+		<p class="price" >$<?php echo $row['fld_price'] ?>.00 USD</p>
+<button class="btn-sm btn-dark" onclick="sub<?php echo $row['fld_product_Id'] ?>()">-</button> <input type="text"  value="1" readonly style="width:50px;text-align: center;" id='quantity<?php echo $row['fld_product_Id'] ?>' > <button onclick="add<?php echo $row['fld_product_Id']?>()" class="btn-sm btn-success">+</button>
+	<form action="Order.html" method="POST">
+<input type="text"  name="fld_Quantity" value="1" hidden readonly style="width:50px;text-align: center;" id='quantity2<?php echo $row['fld_product_Id'] ?>' >
+<input type="hidden" name="fld_product_Id" value="<?php echo $row['fld_product_Id'] ?>">
+
+<br/>
+<br/>
+
+<div class="row">
+	<div class="col-md-6">
+		<h5 class="form-label" align="left">Total Price:</h5>
+
+
+	</div>
+
+	<div class="col-md-6">
+			<input type="hidden"  name="fld_Price" value="<?php echo $row['fld_price'] ?>">
+<input type="text"  class="form-control w-10"  id="Total<?php echo $row['fld_product_Id'] ?>" value="$<?php echo $row['fld_price'] ?>.00 USD" readonly >
+
+	</div>
+</div>
+
+
+<br/>
+
+<div  align="center">
+<input type="text-center" class="form-control w-10" required name="fld_Address" placeholder="Address">
+<br/>
+<input type="number" class="form-control w-10" required name="fld_Phone" placeholder="Phone Number">
+<br/>
+
+<div class="form-group clearfix" id="combo<?php echo $row['fld_product_Id'] ?>">
+                      <div class="icheck-danger d-inline">
+                        <input type="checkbox" id="box1<?php echo $row['fld_product_Id'] ?>" onclick="check<?php echo $row['fld_product_Id'] ?>()">
+                       
+                        	By checking this you agree to the <a target="_blank" href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>
+                      
+                      </div>
+
+                     
+                    </div>
+
+
+
+  <div class="form-group clearfix" id="combo2<?php echo $row['fld_product_Id'] ?>" hidden>
+                      <div class="icheck-danger d-inline">
+                        <input type="checkbox" id="box2<?php echo $row['fld_product_Id'] ?>"  onclick="check2<?php echo $row['fld_product_Id'] ?>()" checked>
+                       
+                        	By checking this you agree to the <a target="_blank" href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>
+                      
+                      </div>
+
+                     
+                    </div>                  
+
+
+</div>
+	<input type="submit" class="btn-block btn-lg btn-success" value="Buy Now" name="Order"  id="Order<?php echo $row['fld_product_Id'] ?>" hidden >
+</form>
+</div>
+
+            </div>
+           
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+	
+ 
+
+
+
+<?php 
+}
+
+
+
+
+
+?>
+
+
+                                <?php
+
+$sql = "SELECT * FROM tbl_products  where fld_Status='Active' ";
+
+        $result = mysqli_query($conn,$sql);
+ $rowcount=mysqli_num_rows($result);
+
+
+                      while($row = mysqli_fetch_assoc($result)) {
+
+
+?> 
+
+                          	<script type="text/javascript">    
+
+
+
+                          	function check<?php echo $row['fld_product_Id'] ?>(){
+
+
+                          	
+                          		document.getElementById('Order<?php echo $row['fld_product_Id'] ?>').hidden=false;
+                            	
+                          				document.getElementById('combo<?php echo $row['fld_product_Id'] ?>').hidden=true;
+                          				document.getElementById('combo2<?php echo $row['fld_product_Id'] ?>').hidden=false;
+                          					document.getElementById('box2<?php echo $row['fld_product_Id'] ?>').checked=true;
+
+                          	} 
+
+                          	 	function check2<?php echo $row['fld_product_Id'] ?>(){
+
+
+                          
+                          		document.getElementById('Order<?php echo $row['fld_product_Id'] ?>').hidden=true;
+                          		
+                          				document.getElementById('combo<?php echo $row['fld_product_Id'] ?>').hidden=false;
+                          				document.getElementById('combo2<?php echo $row['fld_product_Id'] ?>').hidden=true;
+                          				document.getElementById('box1<?php echo $row['fld_product_Id'] ?>').checked=false;
+
+                          	} 
+
+
+                          	 function add<?php echo $row['fld_product_Id']?>(){
+
+
+
+                                  var quant<?php echo $row['fld_product_Id'] ?>=document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value;
+																document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value= ++quant<?php echo $row['fld_product_Id']?>;
+																document.getElementById('quantity2<?php echo $row['fld_product_Id'] ?>').value= quant<?php echo $row['fld_product_Id']?>;
+                                
+                    
+                                
+
+																	document.getElementById('Total<?php echo $row['fld_product_Id'] ?>').value="$ "+ quant<?php echo $row['fld_product_Id']?>*<?php echo $row['fld_price'] ?>+".00 USD" ;
+              
+
+
+
+                                  
+                                }
+
+                                function sub<?php echo $row['fld_product_Id'] ?>(){
+
+
+
+                                  var quant<?php echo $row['fld_product_Id'] ?>=document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value;
+                                  document.getElementById('quantity2<?php echo $row['fld_product_Id'] ?>').value= quant<?php echo $row['fld_product_Id']?>;
+
+                                  if (quant<?php echo $row['fld_product_Id'] ?><=1){
+
+                                    document.getElementById('minus<?php echo $row['fld_product_Id'] ?>').disabled=true;
+
+                                    	document.getElementById('Total<?php echo $row['fld_product_Id'] ?>').value="$ "+quant<?php echo $row['fld_product_Id']?>*<?php echo $row['fld_price'] ?>+".00 USD" ;
+
+
+                                  }else{
+                                  document.getElementById('quantity<?php echo $row['fld_product_Id'] ?>').value= --quant<?php echo $row['fld_product_Id'] ?>;
+                                  document.getElementById('quantity2<?php echo $row['fld_product_Id'] ?>').value= quant<?php echo $row['fld_product_Id']?>;
+
+                                  	document.getElementById('Total<?php echo $row['fld_product_Id'] ?>').value="$ "+ quant<?php echo $row['fld_product_Id']?>*<?php echo $row['fld_price'] ?> +".00 USD";
+                                }
+                                }
+
+
+                             
+
+                               </script>
+<?php
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="work" id="Refund">
+	<div class="work-layer py-5">
+	<div class="container py-md-1">
+
+			
+	
+			<div class="py-lg-5 py-3">
+			<h3 class="heading text-center text-white mb-lg-5 mb-4">Grievance Officer</h3>	
+
+			<div align="center" class="text-white">
+	<h3>Rich Fernandes</h3>
+<p style="font-size: 20px;">Assistant Manager - Customer Service</p>
+<p style="font-size: 17px;">overseasroyalstar@gmail.com</p>
+<p style="font-size: 15px;">+91 8850221631</p>
+<p style="font-size: 15px;">Monday to Friday, 10:00 AM to 6:00 PM</p>
+</div>
+		</div>
+			
+	</div>
+	</div>
+</section>
+
+
+<!-- subscribe
+<section class="quotes py-5 text-center">
+	<div class="container py-md-3">
+		<div class="quotes-info agile-info-quotes">
+			<h3 class="heading text-center mb-3">Subscribe with us</h3>
+			<p class="mb-5">Cras blandit nibh ut pretium elementum. Duis bibendum convallis nun ca dictum. Quisquen ac ipsum porta, ultrices metus sit amet,
+			curs in nisl. Duis aliquet varius sem sit amet.</p>
+			<form action="#" method="post" class="">
+				<input type="email" name="Email" placeholder="Enter your email..." required="">
+				<input type="submit" value="Subscribe">
+				<div class="clearfix"> </div>
+				<span>By signing up to our website, you agree to the <a href="#">terms and conditions.</a></span>
+			</form>
+		</div>
+	</div>
+</section> 
+ -->
+
+<!-- footer -->	
+<footer class="py-5" id="contact">
+	<div class="container pt-md-3">
+		<div class="row ">
+		<div class="col-lg-4 col-md-6">
+            <h3 class="mb-4">Address Info</h3>
+
+				<p>1234 block, 180/181 Kokri Agar, Sion Koliwada, Antop Hill Church, Sion, Mumbai, Maharashtra - 400037, India</p>
+
+				<br/>
+
+    				<h3 class="mb-4">Phone Numbers</h3>
+				<p class="mt-1">Mr. Gaurav Keshari : +919833788226</p>
+				<p class="mt-1">Mr Rich Fernandes : +91 8850221631</p>
+				<br/>
+					
+		</div>
+
+
+		<div class="col-lg-3 col-md-6 mt-md-0 mt-5">
+   	<h3 class="mb-4">Email Addresses</h3>
+				<p class="my-1"><a href="mailto:info@example.com">overseasroyalstar@gmail.com</a></p>
+				<p class="my-1"><a href="mailto:info@example.com">gaurav.kesh5@gmail.com</a></p>
+		
+		</div>
+		<div class="col-lg-5 mt-lg-0 mt-5">
+			<h3 class="mb-4 ml-md-5"> Contact Us</h3>
+			<form action="#" method="POST" class="register-wthree">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-2 d-sm-flex align-items-end justify-content-end px-sm-0">
+							<label class="mb-0">
+								<span class="fa fa-user text-white"></span>
+							</label>
+						</div>
+						<div class="col-sm-5 pr-sm-1">
+							<input class="form-control" type="text" placeholder="First Name" name="fld_Firstname" required="">
+						</div>
+						<div class="col-sm-5 pl-sm-1 pl-auto mt-sm-0 mt-2">
+							<input class="form-control" type="text" placeholder="Last Name"  name="fld_Lastname" required="">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-2 d-sm-flex align-items-end justify-content-end px-sm-0">
+							<label class="mb-0">
+								<span class="fa fa-envelope-open text-white"></span>
+							</label>
+						</div>
+						<div class="col-sm-10">
+							<input class="form-control" type="email" name="fld_Email" placeholder="example@mail.com" name="email" required="">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-2 d-sm-flex align-items-end justify-content-end px-sm-0">
+							<label class="mb-0">
+								<span class="fa fa-edit text-white"></span>
+							</label>
+						</div>
+						<div class="col-sm-10">
+							<textarea placeholder="Your message here" name="fld_Message" class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="offset-2"></div>
+					<div class="col-sm-10">
+						<button type="submit" onclick="this.form.submit()" name="submit" class="btn btn-block w-100">Send</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+ <script type="text/javascript">
+window.onload = function(){
+     
+
+
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    window.setTimeout(function () {
+        location.href = "#";
+    }, 4000);
+
+            Swal.fire(
+ 'For portfolio use only; the site has not been fully uploaded yet.',
+    'Developed by Earl',
+  'warning'
+)
+});
+
+} </script>
+
+   
+
+
+
+<br/><br/>
+
+	<div class="row">
+	<div class="col-lg-4 col-md-6">
+	<div id="logo">
+				<h1> <a href="#home" class="move-top scroll"  data-selector=".editContent"><span class="fa-solid fa-apple-whole" style="color:rgb(48,195,183)"></span> Royal Star Overseas</a></h1>
+			</div>
+
+	</div>
+	<div class="col-lg-4 col-md-6">
+
+
+
+	</div>
+	<div class="col-lg-4 col-md-6">
+	
+	
+				<a href="privacy.html"  target="_blank" class="btn btn-primary w-40" style="visibility: 50%;">Privacy Policy</a> 
+	
+				<a href="Terms.html"  target="_blank" class="btn btn-primary w-40" style="visibility: 50%;">Terms and Conditions</a>
+	</div>
+
+	
+
+</div>
+	</div>
+	<div class="copyright pt-sm-5 pt-4 text-center">
+		<a href="#home" class="move-top scroll"><span class="fa fa-angle-up" aria-hidden="true"></span></a>
+		<p>Copyright &copy; 2023.Royal Star Overseas All rights reserved.<a target="_blank" ></p>
+	</div>
+</footer>
+<!-- footer -->
+
+<!-- popup for btn -->
+
+<!-- //popup for btn -->
+<!-- jQuery -->
+<script src="fonts\fontawesome-free\js\all.min.js"></script>
+<script src="fonts\fontawesome-free\js\conflict-detection.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 -->
+<script src="plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="plugins/toastr/toastr.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+</body>
+</html>
