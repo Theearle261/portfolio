@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <?php 
+        include("../config.html");
+
+        ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Drag Race Philippines Quiz</title>     
+        <link rel="icon" type="image/x-icon" href="../images/logo.png">
+        <link href="../nagaland_files/bootstrap.min.css" rel="stylesheet">
+        <link href="../nagaland_files/bootstrap-icons.css" rel="stylesheet">
+        <link href="../nagaland_files/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=" ../plugins/fontawesome-free/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href=" ../plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href=" ../plugins/toastr/toastr.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" ../dist/css/adminlte.min.css">
+
+
+    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=" ../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href=" ../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href=" ../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href=" ../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" ../dist/css/adminlte.min.css">
+
+        <style>
+        .result-sec{padding:0px 50px;}
+        .result-table-div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding:120px;
+            padding-top: 0px !important;
+        }
+
+        .result-table-div {
+            /*padding: 0px 0px 5% 0px;*/
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .title-div p{font-size: 20px;
+            font-weight: bold;
+            margin: 0px 0px 50px;}
+        .title-div h1{text-transform:uppercase;margin:0px 0px 20px;}
+        .title-div span{color:#af1c2b;}
+        .title p {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0px;
+            padding: 10px 20px;
+            color: #AF1C2B;
+        }
+
+        .day-txt,
+        .date-txt {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .date-txt ul {
+            padding: 0px;
+            list-style: none;
+            display: contents;
+        }
+
+        .day-txt p {
+            padding: 8px;
+            border: 1px solid #dbdbdb !important;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .date-txt li {
+            padding: 10px;color:#dbdbdb;
+            border: 1px solid #dbdbdb !important;
+        }
+
+        .table-layout {
+            background-color: #FFF;
+            filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.26));
+            text-align: center;
+            padding: 0px;
+            border-radius: 10px;
+        }
+
+        .day-txt p:last-child {         
+        }
+
+        .date-txt a {
+            color: green;
+            font-weight: bold;
+        }
+
+        .date-txt a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+
+        @media screen and (max-width:980px) {
+            .result-sec .container {
+                max-width: initial;
+            }
+            .result-table-div {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .result-table-div {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 12px 12px 12px 12px;
+            }
+
+            td {
+                padding: 5px;
+            }
+            .day-txt p {
+                padding: 5px;
+            }
+            .navbar-brand span {
+                display: inherit !important;
+            }
+        }
+        </style>
+    </head>
+    
+    <body id="section_1" >
+    <script src="../nagaland_files/jquery-1.12.3.min.js.download"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.nav li.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+    </script>
+        <div id="sticky-wrapper" class="sticky-wrapper" style="height: 100px; background-color: pink; " align="center">
+            <nav class="navbar navbar-expand-lg  shadow-lg"  style=" background-color: purple;">
+            <div class="container" style=" background-color: pink;" >
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo.png" height="80px" alt="Drag Race" >
+                   
+                  
+                </a>
+                    
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link noactive" href="../index.html">Home</a>
+                        </li>
+
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="schemes.html">Schemes</a>
+                        </li>-->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Portfolio.html">Portfolio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="../Season.html">Quizzes</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="../About.html">About the Developer</a>
+                        </li>
+                        
+                        
+                        
+                        
+
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="prize-claim-form.html">Prize Claim Form</a></li>
+                                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                <li><a class="dropdown-item" href="#">Circulars</a></li>
+                                <li><a class="dropdown-item" href="the_lotteries_regulation_act_1998.pdf" target="_blank" download>The Lotteries (Regulation) Act, 1998</a></li>
+                                <li><a class="dropdown-item" href="the_lotteries_regulation_rules_2010.pdf" target="_blank" download>The Lotteries (Regulation) Rules, 2010</a></li>
+                                <li><a class="dropdown-item" href="#">The Nagaland State Lotteries Rules, 1972</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Directorate</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="hierarchy.html">Hierarchy</a></li>
+                                <li><a class="dropdown-item" href="officers_and_staff.html">Officers & Staff</a></li>                                
+                                <li><a class="dropdown-item" href="contact.html">Contacts</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav></div>
+       
+
+
+       <script src=" ../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src=" ../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 -->
+<script src=" ../plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src=" ../plugins/toastr/toastr.min.js"></script>
+<!-- AdminLTE App -->
+<script src=" ../dist/js/adminlte.min.js"></script>
+
+
+
+
+
+    </script>
+<body style="background-color: pink; height: 100%;">
+            <main>
+         
+         
+
+
+
+            <section class="section-padding section-bg" id="section_2" style="background-color: pink;">
+        <div id="page-wrap">
+ 
+   
+        
+        <form action="result_spill1.html" method="post" >
+        
+            
+               
+
+<br/>   <br/> <br/>   <br/>
+
+
+
+
+
+<script type="text/javascript">
+
+
+        function Q1(){
+
+        document.getElementById('Q1').hidden=false;
+
+
+
+         }
+    
+
+    function Q2(){
+
+        document.getElementById('Q1').hidden=true;
+        document.getElementById('Q2').hidden=false;
+
+
+
+    }
+
+
+        function Q3(){
+
+        document.getElementById('Q2').hidden=true;
+        document.getElementById('Q3').hidden=false;
+
+
+
+    }
+
+
+           function Q4(){
+
+        document.getElementById('Q3').hidden=true;
+        document.getElementById('Q4').hidden=false;
+
+
+
+    }
+
+
+
+           function Q5(){
+
+        document.getElementById('Q4').hidden=true;
+        document.getElementById('Q5').hidden=false;
+
+
+
+    }
+
+
+
+           function Q6(){
+
+        document.getElementById('Q5').hidden=true;
+        document.getElementById('Q6').hidden=false;
+
+
+
+    }
+
+
+
+           function Q7(){
+
+        document.getElementById('Q6').hidden=true;
+        document.getElementById('Q7').hidden=false;
+
+
+
+    }
+
+
+
+           function Q8(){
+
+        document.getElementById('Q7').hidden=true;
+        document.getElementById('Q8').hidden=false;
+
+
+
+    }
+
+
+
+           function Q9(){
+
+        document.getElementById('Q8').hidden=true;
+        document.getElementById('Q9').hidden=false;
+
+
+
+    }
+
+
+
+           function Q10(){
+
+        document.getElementById('Q9').hidden=true;
+        document.getElementById('Q10').hidden=false;
+
+
+
+    }
+
+
+
+           function Q11(){
+
+        document.getElementById('Q10').hidden=true;
+        document.getElementById('Q11').hidden=false;
+
+
+
+    }
+
+
+
+           function Q12(){
+
+        document.getElementById('Q11').hidden=true;
+        document.getElementById('Q12').hidden=false;
+
+
+
+    }
+
+              function Q13(){
+
+         document.getElementById('sub').hidden=false;
+
+
+    }
+</script>
+          
+
+
+
+
+
+
+              
+
+                <div class="container" id="Q1" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"I see stalkers, Oh there they are"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a1" value="A" autocomplete="off" onclick="Q2()"> Vinas Deluxe
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a1" value="B" autocomplete="off" onclick="Q2()"> Precious Paula Nicole
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a1" value="C" autocomplete="off" onclick="Q2()">  Xilhouete
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a1" value="D" autocomplete="off" onclick="Q2()">  Marina Summers
+                  </label>
+                </div>
+
+                 </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="container" id="Q2" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"aaaah! etchos"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a2" autocomplete="off" value="A" onclick="Q3()"> Brigiding
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a2" autocomplete="off" value="B" onclick="Q3()"> Xilhouete
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a2" autocomplete="off" value="C" onclick="Q3()">  Minty Fresh
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a2" autocomplete="off" value="D" onclick="Q3()">   Precious Paula Nicole
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div> 
+
+
+
+
+
+                      <div class="container" id="Q3" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Mayadaw mga kaibsunan or should I say hello mga kaibigan with feelings."</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a3" autocomplete="off" value="A" onclick="Q4()"> Lady Morgana
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a3" autocomplete="off" value="B" onclick="Q4()"> Minty Fresh
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a3" autocomplete="off" value="C" onclick="Q4()">  Turing
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a3" autocomplete="off" value="D" onclick="Q4()">  Eva Lee Queen
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div>
+
+
+                 <div class="container" id="Q4" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Finaly, I'm here. Bring it on girls"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a4" autocomplete="off" value="A" onclick="Q5()"> Prince
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a4" autocomplete="off" value="B" onclick="Q5()"> Brigiding
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a4" autocomplete="off" value="C" onclick="Q5()">   Eva Lee Queen
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a4" autocomplete="off" value="D" onclick="Q5()">  Gigi Era
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div>
+ 
+
+
+                      <div class="container" id="Q5" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Pilipinas, Fresh ka pa ba?"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a5" autocomplete="off" value="A" onclick="Q6()"> Xilhouete
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a5" autocomplete="off" value="B" onclick="Q6()">  Precious Paula Nicole
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a5" autocomplete="off" value="C" onclick="Q6()">  Minty Fresh
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a5" autocomplete="off" value="D" onclick="Q6()">  Gigi Era
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div> 
+
+
+
+                      <div class="container" id="Q6" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Just like summer, this is my season"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a6" autocomplete="off" value="A" onclick="Q7()"> Prince 
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a6" autocomplete="off" value="B" onclick="Q7()"> Corazon
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a6" autocomplete="off" value="C" onclick="Q7()">  Marina Summers
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a6" autocomplete="off" value="D" onclick="Q7()">  Lady Morgana
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div>
+
+
+
+
+    <div class="container" id="Q7" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Dude, Pare, Chong Ofcourse"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a7" autocomplete="off" value="A" onclick="Q8()"> Precious Paula Nicole
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a7" autocomplete="off" value="B" onclick="Q8()"> Prince
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a7" autocomplete="off" value="C" onclick="Q8()">  Minty Fresh
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a7" autocomplete="off" value="D" onclick="Q8()">  Brigiding
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div> 
+
+
+
+
+
+
+
+                      <div class="container" id="Q8" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Mirror mirror on the wall, who's the baddest bitch of them all?"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a8" autocomplete="off" value="A" onclick="Q9()"> Eva Lee queen
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a8" autocomplete="off" value="B" onclick="Q9()"> Xilhouete
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a8" autocomplete="off" value="C" onclick="Q9()">  Marina Summers
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a8" autocomplete="off" value="D" onclick="Q9()">  Precious Paula Nicole
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div>
+
+
+
+                      <div class="container" id="Q9" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Miss Ma'am, I'm home and I'm ready to sit on that throne bitches"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a9" autocomplete="off" value="A" onclick="Q10()"> Corazon
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a9" autocomplete="off" value="B" onclick="Q10()"> Brigiding
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a9" autocomplete="off" value="C" onclick="Q10()">  Prince
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a9" autocomplete="off" value="D" onclick="Q10()">  Gigi Era
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+                </div> 
+
+
+
+
+
+      
+                <div class="container" id="Q10" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Prrrrt!! Happy Fiesta"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a10" autocomplete="off" value="A" onclick="Q11()"> Lady Morgana
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a10" autocomplete="off" value="B" onclick="Q11()"> Eva Lee Queen
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a10" autocomplete="off" value="C" onclick="Q11()">  Vinas Deluxe
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a10" autocomplete="off" value="D" onclick="Q11()">  Corazon
+                  </label>
+                </div>
+
+          
+                 </div> 
+                </div>
+
+
+
+
+                             <div class="container" id="Q11" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Say Yeaaaah! Nandito na pala kayo? My God"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a11" autocomplete="off" value="A" onclick="Q12()"> Gigi Era
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a11" autocomplete="off" value="B" onclick="Q12()"> Brigiding
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a11" autocomplete="off" value="C" onclick="Q12()">  Vinas Deluxe
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a11" autocomplete="off" value="D" onclick="Q12()">  Eva Lee Queen
+                  </label>
+                </div>
+
+          
+                 </div> 
+                </div>
+
+
+
+
+
+
+
+
+                <div class="container" id="Q12" hidden>
+                  <div class="card card-primary">
+                    <h3 align="center" style="height:150px; padding-top: 10%;">"Let's do this!"</h3>
+                  </div>
+                   
+
+                <div class="card" >
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn bg-purple">
+                    <input type="radio" name="a12" autocomplete="off" value="A" onclick="Q13()"> Lady Morgana
+                  </label>
+                  <label class="btn bg-pink">
+                    <input type="radio" name="a12" autocomplete="off" value="B" onclick="Q13()"> Turing
+                  </label>
+                  <br/>   <br/> <br/>   <br/>
+                  <label class="btn bg-purple ">
+                    <input type="radio" name="a12" autocomplete="off" value="C" onclick="Q13()">  Minty Fresh
+                  </label>
+                   <label class="btn bg-pink ">
+                    <input type="radio" name="a12" autocomplete="off" value="D" onclick="Q13()">  Brigiding
+                  </label>
+                </div>
+    
+
+          
+                 </div> 
+              
+                </div>
+
+   <div align="center">
+                  <input type="submit" id="sub" hidden  class="btn bg-purple" style="background-image: url(images/glitter.jpg); background-size: 800px; " align="center" value="Submit"   />
+              </div>
+
+        
+        
+        </form>
+    
+    </div>
+
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+    });
+</script>
+
+  <div class="modal fade " id="myModal">
+        <div class="modal-dialog modal-sm ">
+          <div class="modal-content bg-purple">
+            <div class="modal-header">
+              <h4 class="modal-title">Instruction</h4>
+        
+            </div>
+            <div class="modal-body">
+              <h3>Which among the queens said the following?</h3>
+            </div>
+            <div class="modal-footer" align="right">
+              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="Q1()">Proceed</button>
+         
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+        
+
+
+
+
+
+    </section>
+       
+        </main>
+
+
+    <style>
+       
+    </style>
+
+     <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 500);
+    </script>
+
+    
+</body>
+</html>

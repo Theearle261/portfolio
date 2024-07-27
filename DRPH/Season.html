@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.nagalandlotteries.com/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <?php 
+        include("config.html");
+
+        ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Drag Race Philippines Quiz</title>     
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <link href="./nagaland_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./nagaland_files/bootstrap-icons.css" rel="stylesheet">
+        <link href="./nagaland_files/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=" plugins/fontawesome-free/css/all.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href=" plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href=" plugins/toastr/toastr.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" dist/css/adminlte.min.css">
+
+
+    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=" plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href=" plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href=" plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href=" plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" dist/css/adminlte.min.css">
+
+        <style>
+        .result-sec{padding:0px 50px;}
+        .result-table-div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding:120px;
+            padding-top: 0px !important;
+        }
+
+        .result-table-div {
+            /*padding: 0px 0px 5% 0px;*/
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .title-div p{font-size: 20px;
+            font-weight: bold;
+            margin: 0px 0px 50px;}
+        .title-div h1{text-transform:uppercase;margin:0px 0px 20px;}
+        .title-div span{color:#af1c2b;}
+        .title p {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0px;
+            padding: 10px 20px;
+            color: #AF1C2B;
+        }
+
+        .day-txt,
+        .date-txt {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .date-txt ul {
+            padding: 0px;
+            list-style: none;
+            display: contents;
+        }
+
+        .day-txt p {
+            padding: 8px;
+            border: 1px solid #dbdbdb !important;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .date-txt li {
+            padding: 10px;color:#dbdbdb;
+            border: 1px solid #dbdbdb !important;
+        }
+
+        .table-layout {
+            background-color: #FFF;
+            filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.26));
+            text-align: center;
+            padding: 0px;
+            border-radius: 10px;
+        }
+
+        .day-txt p:last-child {         
+        }
+
+        .date-txt a {
+            color: green;
+            font-weight: bold;
+        }
+
+        .date-txt a:hover {
+            text-decoration: underline;
+            color: green;
+        }
+
+        @media screen and (max-width:980px) {
+            .result-sec .container {
+                max-width: initial;
+            }
+            .result-table-div {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .result-table-div {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 12px 12px 12px 12px;
+            }
+
+            td {
+                padding: 5px;
+            }
+            .day-txt p {
+                padding: 5px;
+            }
+            .navbar-brand span {
+                display: inherit !important;
+            }
+        }
+        </style>
+    </head>
+    
+    <body id="section_1" >
+    <script src="./nagaland_files/jquery-1.12.3.min.js.download"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.nav li.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+    </script>
+        <div id="sticky-wrapper" class="sticky-wrapper" style="height: 100px; background-color: pink; ">
+            <nav class="navbar navbar-expand-lg  shadow-lg"  style=" background-color: purple;">
+            <div class="container" style=" background-color: pink;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" height="80px" alt="DRPH">
+                   
+                  
+                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="padding-right: 10%;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link noactive" href="index.html">Home</a>
+                        </li>
+
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="schemes.html">Schemes</a>
+                        </li>-->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio(Coming Soon)</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="Season.html">Quizzes</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="About.html">About the Developer</a>
+                        </li>
+                        
+                        
+                        
+                        
+
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="prize-claim-form.html">Prize Claim Form</a></li>
+                                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                                <li><a class="dropdown-item" href="#">Circulars</a></li>
+                                <li><a class="dropdown-item" href="the_lotteries_regulation_act_1998.pdf" target="_blank" download>The Lotteries (Regulation) Act, 1998</a></li>
+                                <li><a class="dropdown-item" href="the_lotteries_regulation_rules_2010.pdf" target="_blank" download>The Lotteries (Regulation) Rules, 2010</a></li>
+                                <li><a class="dropdown-item" href="#">The Nagaland State Lotteries Rules, 1972</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Directorate</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="hierarchy.html">Hierarchy</a></li>
+                                <li><a class="dropdown-item" href="officers_and_staff.html">Officers & Staff</a></li>                                
+                                <li><a class="dropdown-item" href="contact.html">Contacts</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav></div>
+       
+
+
+       <script src=" plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src=" plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 -->
+<script src=" plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src=" plugins/toastr/toastr.min.js"></script>
+<!-- AdminLTE App -->
+<script src=" dist/js/adminlte.min.js"></script>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="./nagaland_files/jquery.min.js.download"></script>
+        <script src="./nagaland_files/bootstrap.min.js.download"></script>
+        <script src="./nagaland_files/jquery.sticky.js.download"></script>
+       <!-- <script src="js/click-scroll.js"></script>-->
+        <script src="./nagaland_files/counter.js.download"></script>
+        <script src="./nagaland_files/custom.js.download"></script>
+        <script type="text/javascript">
+
+$(document).ready(function(){
+
+   $('.btnShows').click(function(){
+   
+       var id = $(this).data('id');
+       //alert(id);
+       //exit();
+
+       // AJAX request
+       $.ajax({
+           url: 'insertContent.html',
+           type: 'post',
+           data: {id: id},
+           success: function(response){ 
+               // Add response in Modal body
+               var url = response;
+                if (url != "") {
+                    $.ajax({
+                        url: url,
+                        type: 'HEAD',
+                        error: function()
+                        {
+                            alert("File doesn't exists");
+                            $("#output").text("File doesn't exists");
+                        },
+                        success: function()
+                        {
+                            //window.location.href =url;
+                          window.location.href = "download.html?val="+url;
+                        }
+                    });
+                } 
+            }
+               
+           });
+       });
+   });
+
+    </script>
+<body style="background-color: pink; height: 100%;">
+            <main>
+         
+         
+<br/><br/><br/><br/>
+
+
+
+<div id="blink" class="ribbon bg-pink" align="center"><h3>Select season to slay! </h3></div>
+
+            <section class="section-padding section-bg" id="section_2" style="background-color: pink;">
+                <div class="container">
+                    <div class="row">
+               
+                     
+                       <div class="col-lg-6 col-12"  >
+                    
+                        <a href="S1/S1_Quiz.html"> 
+                    <div class="position-relative p-3 bg-gray"style="height: 200px; background-image: url(images/s1.jpg); background-size:100% 100%;" align="center">
+                      <div class="ribbon-wrapper">
+                        <div class="ribbon bg-purple" >
+                          Season 1
+                        </div>
+                      </div>
+                       <br>
+                   
+                    </div>
+                        </a>
+                    </div>
+                </div>
+
+                        <br/>
+                <div class="row">
+             <div class="col-lg-6 col-12"  >
+                    
+                        <a href="S2/S2_Quiz.html"> 
+                    <div class="position-relative p-3 bg-gray"style="height: 200px; background-image: url(images/s2.jpg); background-size:100% 100%;" align="center">
+                      <div class="ribbon-wrapper">
+                        <div class="ribbon bg-red">
+                          Season 2
+                        </div>
+                      </div>
+                       <br>
+                   
+                    </div>
+                        </a>
+                    </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+        
+
+          
+
+    </section>
+       
+        </main>
+
+
+    <style>
+        #blink {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d38be;
+            transition: 0.5s;
+        }
+    </style>
+
+     <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 500);
+    </script>
+
+    
+</body>
+</html>
