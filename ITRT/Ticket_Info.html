@@ -1,0 +1,1738 @@
+<html lang="en" style="height: auto;"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT Request Tracker</title>
+
+
+      <link rel="icon" href="images/logo.png">
+
+</head>
+<body class="sidebar-mini layout-fixed" style="height: auto;">
+<div class="wrapper">
+
+  <!-- Preloader -->
+
+
+
+
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IT Request Tracker</title>
+
+
+      <link rel="icon" href="images/logo.png" style="height: 100px; width: 150px;">
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+  <!-- Add this to the <head> section of your HTML document -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-xeQVSt6+5XqZBtoz1kmX9m7YCyEg8fB7BXgeMq7gIelp+IuOB+xhXs1jef4qzukF" crossorigin="anonymous">
+
+
+ <!--  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="images/logo.png" alt="MAS Logo" height="200" width="210">
+  </div>
+ -->
+
+    
+    <!-- Favicon -->
+        <link rel="icon" href="images/logo.png">
+
+
+          <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+  
+  </nav>
+
+
+
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 collapsed">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link" style="color:white;">
+            <img src="images/logo.png" alt="Venkateshwara Traders" class="brand-image img-circle elevation-3" style="opacity: 3;">
+      <span class="brand-text font-weight-light"><b>IT Request Tracker <br> <p align="center"> System</p></b></span>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sidebar -->
+    <div class="sidebar os-host os-theme-light os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"><div class="os-resize-observer-host observed"><div class="os-resize-observer" style="left: 0px; right: auto;"></div></div><div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;"><div class="os-resize-observer"></div></div><div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 978px;"></div><div class="os-padding"><div class="os-viewport os-viewport-native-scrollbars-invisible"><div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 ">
+        <div class="image">
+         
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin Catriona Gray</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+          
+              <i class="nav-icon fas fa-tachometer-alt" style="color:teal"></i>
+              <p>
+                Dashboard
+                
+              </p>
+            </a>
+          </li>
+
+
+               <!--   <li class="nav-item">
+            <a href="Messages.html" class="nav-link">
+              <i class="nav-icon fas fa-calendar" style="color:teal"></i>
+              <p>
+                Calendar
+                
+              </p>
+            </a>
+          </li> -->
+
+
+
+
+                 <li class="nav-item">
+            <a href="Banks.html" class="nav-link">
+              <i class="nav-icon fa fa-credit-card" style="color:teal"></i>
+              <p>
+               Banks
+              </p>
+            </a>
+          </li>
+
+
+           <li class="nav-item">
+            <a href="Users_Management.html" class="nav-link">
+              <i class="nav-icon fas fa-user-secret fa-2x" style="color:teal;"></i>
+              <p>
+                Users Management
+              
+              </p>
+            </a>
+          </li>
+
+          
+
+
+           
+
+          
+
+
+
+
+           <li class="nav-item">
+            <a href="logout.html" class="nav-link">
+              <i class="nav-icon fa fa-power-off" style="color:teal"></i>
+              <p>
+                Logout
+               
+              </p>
+            </a>
+          </li>
+         
+         
+      </ul></nav>
+      <!-- /.sidebar-menu -->
+    </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
+
+
+
+
+        <!-- /.sidebar -->
+  </aside>
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 903.816px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Ticket Details</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Ticket Info</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+
+
+
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+
+            <div class="card card-dark">
+              <div class="card-header">
+                  <div align="right">
+              <a class="btn bg-olive btn-lg" href="Edit_Ticket.html?id=46">Edit</a>
+
+
+
+
+
+              <button id="steal" class="btn btn-primary btn-lg" onclick="confirmSteal() ">Steal</button>
+
+
+
+
+                </div>
+              </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 col-sm-4">
+
+
+
+
+
+
+
+
+
+ <script>
+
+
+
+
+    // Example of using SweetAlert for a confirmation dialog
+  function confirmSteal() {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "Once you steal, you will be in charge of fixing this request!",
+        icon: "warning",
+        showCancelButton: true, // Use showCancelButton instead of buttons
+        confirmButtonText: "Yes", // Set confirm button text
+        cancelButtonText: "No", // Set cancel button text
+        confirmButtonColor: "#3085d6", // Set confirm button color
+        cancelButtonColor: "#d33", // Set cancel button color
+    }).then((result) => {
+
+
+        if (result.isConfirmed) {
+         
+
+          window.location.href='Update_Incharge.html?request_Id=46&incharge=1';
+
+
+
+      }else{
+
+ 
+
+      }
+
+
+    })
+  }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">RT No.</label>
+                        <div class="col-sm-8">
+                         <code class="form-control">RT-240509-46</code>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Subject</label>
+                        <div class="col-sm-8">
+                         <code class="form-control">RSN Offline</code>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Requestor</label>
+                        <div class="col-sm-8">
+
+                          
+                         <code class="form-control">Pia Wurtzbach</code>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Incharge</label>
+                        <div class="col-sm-8">
+                          
+                            <code class="form-control">IT</code>
+                                                    </div>
+                    </div>
+
+            </div>
+             <div class="col-12 col-sm-4">
+
+
+                <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Start</label>
+                        <div class="col-sm-8">
+                         <code class="form-control">2024-05-09 11:36</code>
+                        </div>
+                </div>
+
+
+                   <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">End</label>
+                        <div class="col-sm-8">
+                         <code class="form-control">2024-05-09 23:59 </code>
+                        </div>
+                   </div>
+
+
+               <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Latest Modification</label>
+                        <div class="col-sm-8">
+
+                                                   <code class="form-control">2024-05-09 11:39 </code>
+
+                                                 </div>
+                   </div>
+            
+
+                      <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Status</label>
+                        <div class="col-sm-8">
+                         <code class="form-control">Completed</code>
+                        </div>
+                    </div>
+
+
+              </div>
+         
+            <div class="col-12 col-sm-4">
+
+          
+              <div class="row">
+
+                 <div class="col-12 col-sm-8">
+
+                 <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Bank</label>
+                        <div class="col-sm-8">
+
+                                                   <code class="form-control">PNB</code>
+                        </div>
+                    </div> 
+                
+
+                   <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Key</label>
+                        <div class="col-sm-8">
+                         <code> <textarea class="form-control" readonly="">wdbTJ27gm8DrXGL5keBJQeVpLVyt6819oAUsHYjnx31Bw9RMCWOhFjo1hfdEnvM36gWycnZafx37vCQB4IWTQ8yEHaJi0CZZxDvp6qcl4uULPuOITUiH2RNzIKK4Fusk</textarea></code>
+                        </div>
+                    </div>
+                 
+
+                    <div class="form-group row">
+                     <label for="disabledInput" class="col-sm-4 col-form-label">Client Id</label>
+                        <div class="col-sm-8">
+                         <code class="form-control">333333333333</code>
+                        </div>
+                    </div>
+
+               </div>
+
+               <div class="col-12 col-sm-4" align="center">
+              
+             
+              <h5>Priority Level</h5>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+
+                                <label class="btn btn-default text-center">
+                  <input type="radio" name="color_option" id="color_option_a4" autocomplete="off">
+                  1
+                  <br>
+                  <i class="fas fa-circle fa-2x text-red"></i>
+                </label>
+
+                              
+              </div>
+
+    
+
+  
+
+
+            </div>
+          </div>
+        </div>
+
+    
+        </div>
+
+
+<br>
+<br>
+      <div class="row">
+        <div class="col-md-4">
+        <h5>Description</h5>
+
+       <code> <textarea readonly="" rows="10%" cols="50%">RSN offlines</textarea></code>
+      </div>
+        <div class="col-md-4">
+            <h5>Attachments</h5>
+
+                     <a data-toggle="modal" data-target="#attachment117" data-whatever="@mdo"> 
+
+
+      
+
+   
+         
+                <hr>
+
+                <strong><i class="far fa-file-alt mr-1"></i> Cross-Emoji.png</strong>
+
+              
+
+                <hr>
+              
+
+
+        </a>
+      
+
+
+           <div class=" modal fade" id="attachment117" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true" align="center" style="vertical-align: center;">
+                
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="defaultModalLabel">Attachment</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+
+                            </div> 
+
+                                           <div class="card-body">
+
+                             
+ <img src="images/uploads/Cross-Emoji.png" style="height:100%; width: 100%;">
+
+        <br>
+    <a href="images/uploads/Cross-Emoji.png" download="images/uploads/Cross-Emoji.png"><button class="btn btn-primary"><i class="fa fa-arrow-down">Download File</i></button> </a>
+
+
+
+                            </div>
+
+
+                         
+                        </div>
+                      </div>
+
+                   
+                  </div>
+
+
+
+                   <a data-toggle="modal" data-target="#attachment118" data-whatever="@mdo"> 
+
+
+      
+
+   
+         
+                <hr>
+
+                <strong><i class="far fa-file-alt mr-1"></i> WhatsApp Video 2024-04-25 at 08.34.57_c9fd2440.mp4</strong>
+
+              
+
+                <hr>
+              
+
+
+        </a>
+      
+
+
+           <div class=" modal fade" id="attachment118" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true" align="center" style="vertical-align: center;">
+                
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="defaultModalLabel">Attachment</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+
+                            </div> 
+
+                                           <div class="card-body">
+
+                             
+ <video width="320" height="240" controls="" poster="video-thumbnail.jpg">
+        <source src="images/uploads/WhatsApp Video 2024-04-25 at 08.34.57_c9fd2440.mp4" type="video/mp4">
+        </video>
+
+        <br>
+    <a href="images/uploads/WhatsApp Video 2024-04-25 at 08.34.57_c9fd2440.mp4" download="images/uploads/WhatsApp Video 2024-04-25 at 08.34.57_c9fd2440.mp4"><button class="btn btn-primary"><i class="fa fa-arrow-down">Download File</i></button> </a>
+
+
+
+                            </div>
+
+
+                         
+                        </div>
+                      </div>
+
+                   
+                  </div>
+
+
+
+                   <a data-toggle="modal" data-target="#attachment119" data-whatever="@mdo"> 
+
+
+      
+
+   
+         
+                <hr>
+
+                <strong><i class="far fa-file-alt mr-1"></i> app.log.0.1</strong>
+
+              
+
+                <hr>
+              
+
+
+        </a>
+      
+
+
+           <div class=" modal fade" id="attachment119" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel" aria-hidden="true" align="center" style="vertical-align: center;">
+                
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="defaultModalLabel">Attachment</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+
+                            </div> 
+
+                                           <div class="card-body">
+
+                                     <br>
+    <a href="images/uploads/app.log.0.1" download="images/uploads/app.log.0.1"><button class="btn btn-primary"><i class="fa fa-arrow-down">Download File</i></button> </a>
+
+
+
+                            </div>
+
+
+                         
+                        </div>
+                      </div>
+
+                   
+                  </div>
+
+
+
+                  </div>
+
+
+
+        <div class="col-md-4">
+
+              <h5>Root Cause</h5>
+
+       <code> <textarea readonly="" rows="5%" cols="50%">ddd</textarea></code>
+    <h5>Countermeasure</h5>
+
+       <code> <textarea readonly="" rows="5%" cols="50%">ddd</textarea></code>
+
+
+        </div>
+      </div>
+      </div>
+        
+
+
+   <section class="content">
+      <div class="container-fluid">
+      <div class="row">
+
+    
+
+
+        <div class="col-md-5" style="background-color: black; height: 500px; max-width:95% ; overflow: scroll; margin-left: 1%;">
+
+
+          <div class="col-md-12">
+
+            <br><br>
+
+
+
+
+            <!-- The time line -->
+            <div class="timeline">
+            
+              
+
+
+ 
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><code style="color:black"><i class="fas fa-clock"></i>May 9, 2024 11:39</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Catriona Gray</a> updated the <b>countermeasure</b></h3>
+
+
+                  <div class="timeline-footer">
+               
+
+
+
+
+           
+
+                    <form action="Comment.html" method="POST" enctype="multipart/form-data" id="comm193">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+        
+          <input type="hidden" value="0" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <!-- <input type="text"  autocomplete="off" id="box193"  class="form-control" name="fld_comment" placeholder="Comment" oninput="charr193()" autofocus> -->
+  </div>
+
+    <div class="col-md-4">
+<!--  <label for="fileInput193" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label> -->
+
+
+                <input type="hidden" value="193" name="fld_act_Id">
+
+<input type="file" id="fileInput193" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbb193()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="send193" hidden="" onclick="this.form.submit()">Send</button>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script type="text/javascript">
+  
+  function subbb193(){
+
+
+    document.getElementById('send193').click();
+
+  }
+
+
+
+</script>
+  
+        
+  </div>
+
+</div></form>
+                    
+                </div>
+
+
+                </div>
+
+
+
+              </div>
+
+      
+             
+<script type="text/javascript">
+  
+
+
+
+
+  function charr193(){
+
+  
+var commentLength193 = document.getElementById('box193').value;
+
+
+if(commentLength193.length>=1){
+
+document.getElementById('send193').hidden=false;
+
+}else if(commentLength193.length==0){
+
+
+document.getElementById('send193').hidden=true;
+}
+  
+  }
+
+
+
+</script>
+
+
+
+
+
+ 
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><code style="color:black"><i class="fas fa-clock"></i>May 9, 2024 11:39</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Catriona Gray</a> updated the <b>root cause</b></h3>
+
+
+                  <div class="timeline-footer">
+               
+
+
+
+
+           
+
+                    <form action="Comment.html" method="POST" enctype="multipart/form-data" id="comm192">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+        
+          <input type="hidden" value="0" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <!-- <input type="text"  autocomplete="off" id="box192"  class="form-control" name="fld_comment" placeholder="Comment" oninput="charr192()" autofocus> -->
+  </div>
+
+    <div class="col-md-4">
+<!--  <label for="fileInput192" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label> -->
+
+
+                <input type="hidden" value="192" name="fld_act_Id">
+
+<input type="file" id="fileInput192" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbb192()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="send192" hidden="" onclick="this.form.submit()">Send</button>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script type="text/javascript">
+  
+  function subbb192(){
+
+
+    document.getElementById('send192').click();
+
+  }
+
+
+
+</script>
+  
+        
+  </div>
+
+</div></form>
+                    
+                </div>
+
+
+                </div>
+
+
+
+              </div>
+
+      
+             
+<script type="text/javascript">
+  
+
+
+
+
+  function charr192(){
+
+  
+var commentLength192 = document.getElementById('box192').value;
+
+
+if(commentLength192.length>=1){
+
+document.getElementById('send192').hidden=false;
+
+}else if(commentLength192.length==0){
+
+
+document.getElementById('send192').hidden=true;
+}
+  
+  }
+
+
+
+</script>
+
+
+
+
+
+ 
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><code style="color:black"><i class="fas fa-clock"></i>May 9, 2024 11:39</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Catriona Gray</a> updated the status from <b>Pending</b> to <b> Completed</b></h3>
+
+
+                  <div class="timeline-footer">
+               
+
+
+
+
+           
+
+                    <form action="Comment.html" method="POST" enctype="multipart/form-data" id="comm191">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+        
+          <input type="hidden" value="0" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <!-- <input type="text"  autocomplete="off" id="box191"  class="form-control" name="fld_comment" placeholder="Comment" oninput="charr191()" autofocus> -->
+  </div>
+
+    <div class="col-md-4">
+<!--  <label for="fileInput191" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label> -->
+
+
+                <input type="hidden" value="191" name="fld_act_Id">
+
+<input type="file" id="fileInput191" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbb191()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="send191" hidden="" onclick="this.form.submit()">Send</button>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script type="text/javascript">
+  
+  function subbb191(){
+
+
+    document.getElementById('send191').click();
+
+  }
+
+
+
+</script>
+  
+        
+  </div>
+
+</div></form>
+                    
+                </div>
+
+
+                </div>
+
+
+
+              </div>
+
+      
+             
+<script type="text/javascript">
+  
+
+
+
+
+  function charr191(){
+
+  
+var commentLength191 = document.getElementById('box191').value;
+
+
+if(commentLength191.length>=1){
+
+document.getElementById('send191').hidden=false;
+
+}else if(commentLength191.length==0){
+
+
+document.getElementById('send191').hidden=true;
+}
+  
+  }
+
+
+
+</script>
+
+
+
+
+
+ 
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><code style="color:black"><i class="fas fa-clock"></i>May 9, 2024 11:37</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Pia Wurtzbach</a> updated the <b>description</b></h3>
+
+
+                  <div class="timeline-footer">
+               
+
+
+
+
+           
+
+                    <form action="Comment.html" method="POST" enctype="multipart/form-data" id="comm190">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+        
+          <input type="hidden" value="0" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <!-- <input type="text"  autocomplete="off" id="box190"  class="form-control" name="fld_comment" placeholder="Comment" oninput="charr190()" autofocus> -->
+  </div>
+
+    <div class="col-md-4">
+<!--  <label for="fileInput190" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label> -->
+
+
+                <input type="hidden" value="190" name="fld_act_Id">
+
+<input type="file" id="fileInput190" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbb190()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="send190" hidden="" onclick="this.form.submit()">Send</button>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script type="text/javascript">
+  
+  function subbb190(){
+
+
+    document.getElementById('send190').click();
+
+  }
+
+
+
+</script>
+  
+        
+  </div>
+
+</div></form>
+                    
+                </div>
+
+
+                </div>
+
+
+
+              </div>
+
+      
+             
+<script type="text/javascript">
+  
+
+
+
+
+  function charr190(){
+
+  
+var commentLength190 = document.getElementById('box190').value;
+
+
+if(commentLength190.length>=1){
+
+document.getElementById('send190').hidden=false;
+
+}else if(commentLength190.length==0){
+
+
+document.getElementById('send190').hidden=true;
+}
+  
+  }
+
+
+
+</script>
+
+
+
+
+
+ 
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><code style="color:black"><i class="fas fa-clock"></i>May 9, 2024 11:37</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Pia Wurtzbach</a> updated the priority level from <b> 2</b> to <b>1</b></h3>
+
+
+                  <div class="timeline-footer">
+               
+
+
+
+
+           
+
+                    <form action="Comment.html" method="POST" enctype="multipart/form-data" id="comm189">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+        
+          <input type="hidden" value="0" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <!-- <input type="text"  autocomplete="off" id="box189"  class="form-control" name="fld_comment" placeholder="Comment" oninput="charr189()" autofocus> -->
+  </div>
+
+    <div class="col-md-4">
+<!--  <label for="fileInput189" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label> -->
+
+
+                <input type="hidden" value="189" name="fld_act_Id">
+
+<input type="file" id="fileInput189" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbb189()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="send189" hidden="" onclick="this.form.submit()">Send</button>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script type="text/javascript">
+  
+  function subbb189(){
+
+
+    document.getElementById('send189').click();
+
+  }
+
+
+
+</script>
+  
+        
+  </div>
+
+</div></form>
+                    
+                </div>
+
+
+                </div>
+
+
+
+              </div>
+
+      
+             
+<script type="text/javascript">
+  
+
+
+
+
+  function charr189(){
+
+  
+var commentLength189 = document.getElementById('box189').value;
+
+
+if(commentLength189.length>=1){
+
+document.getElementById('send189').hidden=false;
+
+}else if(commentLength189.length==0){
+
+
+document.getElementById('send189').hidden=true;
+}
+  
+  }
+
+
+
+</script>
+
+
+
+
+
+ 
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-user bg-green"></i>
+                <div class="timeline-item">
+                  <span class="time"><code style="color:black"><i class="fas fa-clock"></i>May 9, 2024 11:37</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Pia Wurtzbach</a> updated the bank from <b>IDFC</b> to <b>PNB</b></h3>
+
+
+                  <div class="timeline-footer">
+               
+
+
+
+
+           
+
+                    <form action="Comment.html" method="POST" enctype="multipart/form-data" id="comm188">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+        
+          <input type="hidden" value="0" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <!-- <input type="text"  autocomplete="off" id="box188"  class="form-control" name="fld_comment" placeholder="Comment" oninput="charr188()" autofocus> -->
+  </div>
+
+    <div class="col-md-4">
+<!--  <label for="fileInput188" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label> -->
+
+
+                <input type="hidden" value="188" name="fld_act_Id">
+
+<input type="file" id="fileInput188" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbb188()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="send188" hidden="" onclick="this.form.submit()">Send</button>
+
+
+
+
+
+
+
+
+
+
+  
+
+<script type="text/javascript">
+  
+  function subbb188(){
+
+
+    document.getElementById('send188').click();
+
+  }
+
+
+
+</script>
+  
+        
+  </div>
+
+</div></form>
+                    
+                </div>
+
+
+                </div>
+
+
+
+              </div>
+
+      
+             
+<script type="text/javascript">
+  
+
+
+
+
+  function charr188(){
+
+  
+var commentLength188 = document.getElementById('box188').value;
+
+
+if(commentLength188.length>=1){
+
+document.getElementById('send188').hidden=false;
+
+}else if(commentLength188.length==0){
+
+
+document.getElementById('send188').hidden=true;
+}
+  
+  }
+
+
+
+</script>
+
+
+            <div>
+                <i class="fas fa-clock bg-gray"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> <code style="color:black">  May 9, 2024 11:36</code></span>
+                  <h3 class="timeline-header no-border"><a href="#">Start Date</a> </h3>
+                </div>
+              </div>
+
+         
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+          <br> <br> <br> <br> <br> <br> <br> <br>
+
+        
+
+        </div>
+
+  
+  <div class="col-md-5" style="background-color: black; height: 500px; max-width:95% ; overflow: scroll;  margin-left: 1%;  ">
+
+
+          <div class="col-md-12">
+
+
+
+
+            <br><br>
+
+
+
+
+      
+
+
+
+
+
+
+                <div class="card card-success card-outline direct-chat direct-chat-success" style="height:430px">
+              <div class="card-header">
+              
+
+        
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <!-- Conversations are loaded here -->
+                <div class="direct-chat-msg sc" style="height:430px; padding:2%;">
+
+
+                  <style type="text/css">
+                    
+                    .sc { 
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-snap-type: y mandatory; 
+} 
+  
+
+
+                  </style>
+                  <!-- Message. Default to the left -->
+
+
+  
+
+
+                  <div class="direct-chat-msg">
+                   
+
+
+
+                
+
+
+     
+                    <!-- /.direct-chat-text -->
+                  </div>
+            </div> 
+ <!-- <input type="text" id= 46 value="46">  -->
+             
+              <!-- /.card-footer-->
+            </div>
+
+
+                <div class="card-footer">
+               <form action="Send.html" method="POST" enctype="multipart/form-data" id="comms<br />
+<b>Warning</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\ITRT\Ticket_Info.html</b> on line <b>1218</b><br />
+">
+       <div class="row" id="comment" align="center">
+           <div class="col-md-8">
+
+
+          <input type="hidden" value="1" name="fld_type">
+                <input type="hidden" value="1" name="fld_Id">
+                  <input type="hidden" value="46" name="fld_request_Id">
+  <input type="text" autocomplete="off" id="boxs" class="form-control" name="fld_comment" placeholder="Comment" oninput="charrs()" autofocus="">
+  </div>
+
+    <div class="col-md-4">
+ <label for="fileInputs" class="custom-file-upload">
+    <i class="fa fa-paperclip"></i> 
+</label>
+
+
+                <input type="hidden" value="<br />
+<b>Warning</b>:  Trying to access array offset on value of type null in <b>C:\xampp\htdocs\ITRT\Ticket_Info.html</b> on line <b>1235</b><br />
+" name="fld_act_Id">
+
+<input type="file" id="fileInputs" name="fld_attachment[]" style="display: none;" multiple="" onchange="subbbs()">
+
+<style type="text/css">
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3.5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-file-upload i {
+    margin-right: 5px;
+}
+</style>
+     
+     <button class="btn btn-primary btn-sm" id="sends" hidden="" onclick="this.form.submit()">Send</button>
+
+
+<script type="text/javascript">
+  
+
+
+
+
+  function charrs(){
+
+
+
+  
+var commentLengths = document.getElementById('boxs').value;
+
+
+if(commentLengths.length>=1){
+
+document.getElementById('sends').hidden=false;
+
+}else if(commentLengths.length==0){
+
+
+document.getElementById('sends').hidden=true;
+}
+  
+  }
+
+
+    function subbbs(){
+
+
+    document.getElementById('sends').click();
+
+  }
+
+
+
+</script>
+
+
+
+
+
+
+
+ 
+              </div>
+
+         
+          
+
+
+
+
+</div></form></div></div></div></div></div></div></section>
+</div>
+</div>
+</section>
+</div>
+<div id="sidebar-overlay"></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="main-footer">
+    
+   <strong>Copyright © 2024 <a href=" index.html">ITRT</a>.</strong> All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+
+
+
+<!-- Bootstrap 4 -->
+
+<!-- SweetAlert2 -->
+<script src="plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="plugins/toastr/toastr.min.js"></script>
+
+
+
+
+  
+
+  
+
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+       "buttons": [ "csvHtml5", "excel", "print"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-12:eq(0)');
+
+  });
+</script><div class="jqvmap-label" style="display: none;"></div></body></html>

@@ -1,0 +1,23 @@
+INFO --- 05-01-2024 09:58:14 || MainFrame.main() : APPLICATION STARTED! ~~~~~~~~~~~~~~~~~~~
+INFO --- 05-01-2024 09:58:14 || Helpers.post() : Payload for ( https://api.wwwqoaaa.com/api/Autobank/getBankInfo ):   --->   {"key":"kGCkmGMF7ACYIHbrTc9oxA80YdKznU25Xrtwf7AQhqXSh8tyTcpbLE0xIax1wVJQnLOeKuONa5hleqMVlEW1wiVP6IURWZnsvBHPb79QcJZdG4de8BYSKpEHRj5Fv2to"}
+INFO --- 05-01-2024 09:58:15 || MainFrame.main() : Bank Info: {"chatid":"-986741595","custpass":"niku8980","custid":"MFSEAFOOD","mobile":"7984777615","name":"MFSEAFOOD","userid":18808,"account":"331220110000521","token":"6346617233:AAHeDhzZBVYkdg9_Fl_3C3pdOHQh-H1_u6o"}
+INFO --- 05-01-2024 09:59:19 || Helpers.post() : Payload for ( https://api.wwwqoaaa.com/api/Autobank/heart ):   --->   {"user_id":"18808","sign":"0e269801b1e3ed4e1a94a0dbfa01097c","type":"boiretail","version":"20240501","timestamp":1714557559577}
+INFO --- 05-01-2024 09:59:19 || MainFrame.main() : heart response:   --->   {"msg":"success","code":1,"data":{"orderId":"","time":"","status":0},"time":"1714557559"}
+INFO --- 05-01-2024 09:59:35 || MainFrame.createJsonData() : JSON DATA:   --->   {"data":[{"transAmount":"1.00","utr":"412187447471","bankName":"MFSEAFOOD","from":"ATIF A","id":"18808","message":"12345","type":"CREDIT","info":"UPI/412187447471/CR/ATIF A/BKID/malekatif/12345"}],"user_id":"18808","sign":"903ad0b3191629a52d9b2689ff3e47e0","type":"boiretail","version":"20240501","timestamp":1714557575979}
+INFO --- 05-01-2024 09:59:36 || Helpers.post() : Payload for ( https://api.wwwqoaaa.com/api/Autobank/online ):   --->   {"user_id":"18808","sign":"903ad0b3191629a52d9b2689ff3e47e0","type":"boiretail","version":"20240501","timestamp":1714557575979}
+INFO --- 05-01-2024 09:59:36 || MainFrame.doOnlineRequest() : Online Response:   --->   {"msg":"success","code":1,"data":[],"time":"1714557576"}
+INFO --- 05-01-2024 09:59:36 || Helpers.post() : Payload for ( https://api.wwwqoaaa.com/api/Autobank/normalrecode ):   --->   {"data":[{"transAmount":"1.00","utr":"412187447471","bankName":"MFSEAFOOD","from":"ATIF A","id":"18808","message":"12345","type":"CREDIT","info":"UPI/412187447471/CR/ATIF A/BKID/malekatif/12345"}],"user_id":"18808","sign":"903ad0b3191629a52d9b2689ff3e47e0","type":"boiretail","version":"20240501","timestamp":1714557575979}
+INFO --- 05-01-2024 09:59:36 || MainFrame.mainLoop() : Normal Recode Response:   --->   {"msg":"success","code":1,"data":[],"time":"1714557576"}
+INFO --- 05-01-2024 09:59:52 || Helpers.offline() : Offline Payload ( https://api.wwwqoaaa.com/api/Autobank/offline ):   --->   {"user_id":"18808","sign":"8058f03f29fb653869a38bbdab83af30","type":"boiretail","version":"20240501","timestamp":1714557592710}
+INFO --- 05-01-2024 09:59:53 || Helpers.post() : Payload for ( https://api.wwwqoaaa.com/api/Autobank/offline ):   --->   {"user_id":"18808","sign":"8058f03f29fb653869a38bbdab83af30","type":"boiretail","version":"20240501","timestamp":1714557592710}
+INFO --- 05-01-2024 09:59:53 || MainFrame.main() : Offline Response:   --->   {"msg":"success","code":1,"data":[],"time":"1714557593"}
+SEVERE --- 05-01-2024 09:59:53 || MainFrame.main() : ERROR   -=|:|=-   java.io.FileNotFoundException: C:\Users\Administrator\Desktop\Bank of India Retail\MF SEA FOOD.xls (The process cannot access the file because it is being used by another process)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:84)
+	at org.jsoup.helper.DataUtil.load(DataUtil.java:66)
+	at org.jsoup.Jsoup.parse(Jsoup.java:166)
+	at com.autobanks.bankofindiaretail.java.MainFrame.mainLoop(MainFrame.java:597)
+	at com.autobanks.bankofindiaretail.java.MainFrame.main(MainFrame.java:384)
+
