@@ -614,6 +614,13 @@ section,
   object-fit: cover;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  .hero {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+}
+
 
 .hero:before {
   content: "";
@@ -1708,8 +1715,8 @@ section,
     padding-top: 40px;
   }
  .img-fluid {
-  width: 250px;      /* or 100% if inside a container */
-  height: 250px;
+  width: 150px;      /* or 100% if inside a container */
+  height: 150px;
   align-items: center;
 }
 
