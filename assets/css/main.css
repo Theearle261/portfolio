@@ -1708,14 +1708,15 @@ section,
     padding-top: 40px;
   }
  .img-fluid {
-  width: 100%;
-  aspect-ratio: 1 / 1;  /* makes it square */
-  object-fit: cover;
+  width: 200px;      /* or 100% if inside a container */
+  height: 200px;
+  align-items: center;
 }
 
   .lightbox-img {
     max-width: 100%;
     max-height: auto;
+
   }
 }
 
