@@ -1707,10 +1707,11 @@ section,
     align-items: flex-start; /* better scroll behavior on phones */
     padding-top: 40px;
   }
-  .img-fluid{
-    max-width: 100%;
-    max-height: auto;
-  }
+ .img-fluid {
+  width: 100%;
+  aspect-ratio: 1 / 1;  /* makes it square */
+  object-fit: cover;
+}
 
   .lightbox-img {
     max-width: 100%;
