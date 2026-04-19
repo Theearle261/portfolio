@@ -123,7 +123,7 @@ h6 {
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: center;
+    align-items: h2;
   }
 
   .navmenu li {
@@ -147,7 +147,7 @@ h6 {
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
-    align-items: center;
+    align-items: h2;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
@@ -284,7 +284,7 @@ h6 {
     font-size: 17px;
     font-weight: 500;
     display: flex;
-    align-items: center;
+    align-items: h2;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
@@ -298,8 +298,8 @@ h6 {
     width: 30px;
     height: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: h2;
+    justify-content: h2;
     border-radius: 50%;
     transition: 0.3s;
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -413,7 +413,7 @@ h6 {
 .footer .credits {
   margin-top: 10px;
   font-size: 13px;
-  text-align: center;
+  text-align: h2;
 }
 
 .footer .credits a {
@@ -559,7 +559,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
+  text-align: h2;
   padding-bottom: 60px;
   position: relative;
 }
@@ -660,6 +660,8 @@ section,
 .about .container {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
+
+ 
 }
 
 .about .skills-content h5 {
@@ -668,50 +670,16 @@ section,
   margin: 30px 0 15px 0;
 }
 
-.about .progress {
-  height: 36px;
-  display: block;
-  background: none;
-  border-radius: 0;
-  margin-top: 15px;
-}
 
-.about .progress .skill {
-  color: var(--default-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
-}
 
-.about .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.about .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
-}
-
-.about .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
-}
-
-.about .about-me h4 {
+.about .about-me h2 {
   font-size: 28px;
   position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
+  align-items: center;
   font-weight: 700;
 }
 
-.about .about-me h4:after {
+.about .about-me h2:after {
   content: "";
   position: absolute;
   display: block;
@@ -725,6 +693,13 @@ section,
 
 .about .about-me p {
   font-size: 18px;
+}
+
+.about-info{
+
+   display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: center;
 }
 
 /*--------------------------------------------------------------
@@ -745,7 +720,7 @@ section,
   position: relative;
 }
 
-.resume .resume-item h4 {
+.resume .resume-item h2 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -950,7 +925,7 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.portfolio .portfolio-item .portfolio-info h2 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
@@ -1005,7 +980,7 @@ section,
   font-weight: 500;
 }
 
-.pricing .pricing-item h4 {
+.pricing .pricing-item h2 {
   margin: 0;
   font-size: 16px;
 }
@@ -1154,7 +1129,7 @@ section,
   margin: 10px 0 5px 0;
 }
 
-.testimonials .testimonial-item h4 {
+.testimonials .testimonial-item h2 {
   font-size: 14px;
   margin: 0 0 15px 0;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
@@ -1502,7 +1477,7 @@ section,
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h4 {
+.portfolio-details .portfolio-description .testimonial-item h2 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
@@ -1573,7 +1548,7 @@ section,
   font-weight: 700;
 }
 
-.service-details h4 {
+.service-details h2 {
   font-size: 20px;
   font-weight: 700;
 }
@@ -1605,4 +1580,169 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+#socials-container {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  margin-top: 1rem;
+  height: 30px;
+}
+
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+
+
+.gallery {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+}
+
+/* Desktop default */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Images */
+.gallery-container img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-container img {
+    height: 300px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .gallery {
+    padding: 20px;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container img {
+    height: 250px;
+  }
+}
+
+/* =========================
+   LIGHTBOX FIX (IMPORTANT)
+========================= */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+
+  display: none;
+  justify-content: center;
+  align-items: center; /* desktop default */
+  align-items: flex-start;
+  overflow: auto;
+  padding: 20px;
+  z-index: 9999;
+}
+
+/* Image */
+.lightbox-img {
+  max-width: 350%;   /* FIX: responsive instead of 350% */
+  max-height: 350%; /* FIX: prevents overflow */
+  width: auto;
+  height: auto;
+
+  border-radius: 10px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .lightbox {
+    align-items: flex-start; /* better scroll behavior on phones */
+    padding-top: 40px;
+  }
+
+  .lightbox-img {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
+ .contact h2{
+  text-align: center;
+  }
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .gallery h2 {
+    text-align: center;
+  }
+  .contact h2{
+  text-align: center;
+  }
+  .close {
+ align-items: flex-start;
+    right: 20px;
+}
+.h2{
+  align-items: center;
+}
+.social-links{
+
+  align-items: center;
+}
 }

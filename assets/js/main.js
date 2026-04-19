@@ -243,3 +243,39 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function toggleMenu() {
+  const menu = document.querySelector('.menu-links');
+  const icon = document.querySelector('.hamburger-icon');
+  menu.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+
+const images = document.querySelectorAll(".gallery-container img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".close");
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target !== lightboxImg) {
+    lightbox.style.display = "none";
+  }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    const lightbox = document.querySelector(".lightbox");
+    lightbox.style.display = "none";
+  }
+});
